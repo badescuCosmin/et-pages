@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-steps/dist/bootstrap-steps.css" />
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css"> -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/roboto-fontface@0.10.0/css/roboto/roboto-fontface.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        works in mobile mode
+    </button>
+    <div class="modal fade p-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-container">
+                <div class="modal-close d-flex justify-content-between">
+                    <div class="choose-plan">Choose your plan</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-header-container">
+                    <div>
+                        <h2 class="title">Abonament de baza</h2>
+                        <h3 class="subtitle">2 jucarii si o carte <br> 1 transport/ luna inclus</h3>
+                    </div>
+                    <div class="subscription-card-price">
+                        <div class="subscription-card-wrapper center-child">
+                            <div class="text-wrapper">
+                                <div class="price">90.00</div>
+                                <div class="text">Ron/lunar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body-container">
+                    <h3 class="header-first modal-body-title">Poți adăuga <span>(Opțional)</span></h3>
+                    <div class="options-container">
+                        <div class="container p-0">
+                            <div class="item-box-container d-flex">
+                                <div class="checkbox-wrapper">
+                                    <input type="checkbox" class="checkbox-style d-none">
+                                    <i class="fas fa-plus fa-sm icon-style checkbox-icon-add"></i>
+                                </div>
+                                <div class="text-container w-100">
+                                    <div class="main-text d-flex">
+                                        <span class="text text-style">1 jucarie suplimentara</span>
+                                        <span class="price text-style">+40.00</span>
+                                    </div>
+                                    <div class="sub-text">Vei putea alege 3 jucarii per comanda</div>
+                                </div>
+                            </div>
+                            <div class="item-box-container d-flex">
+                                <div class="checkbox-wrapper">
+                                    <input type="checkbox" class="checkbox-style d-none">
+                                    <i class="fas fa-plus fa-sm icon-style checkbox-icon-add"></i>
+                                </div>
+                                <div class="text-container w-100">
+                                    <div class="main-text d-flex">
+                                        <span class="text text-style">2 jucarie suplimentara</span>
+                                        <span class="price text-style">+20.00</span>
+                                    </div>
+                                    <div class="sub-text">Vei putea alege 3 jucarii per comanda</div>
+                                </div>
+                            </div>
+                            <div class="item-box-container d-flex">
+                                <div class="checkbox-wrapper">
+                                    <input type="checkbox" class="checkbox-style d-none">
+                                    <i class="fas fa-plus fa-sm icon-style checkbox-icon-add"></i>
+                                </div>
+                                <div class="text-container w-100">
+                                    <div class="main-text d-flex">
+                                        <span class="text text-style">1 jucarie suplimentara</span>
+                                        <span class="price text-style">+120.00</span>
+                                    </div>
+                                    <div class="sub-text">Vei putea alege si o jucarie din portofoliul super-premium
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button-primary" id='btn-cta'>Change <span>119.00 Ron</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</html>

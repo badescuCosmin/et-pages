@@ -1,0 +1,105 @@
+
+
+/* the styles for modal */
+ .modal-container {
+    width: 348px;
+    height: 505px;
+    position: absolute;
+    top:101px;
+    left:50%;
+    transform: translate(-50%);
+    border-radius: 14px;
+    background-color: var(--white-color);
+    border:1px solid #979797;
+    z-index: 200;
+    padding:20px;
+    display: none;
+}
+ .modal-container .choose-plan {
+    color:#F52865;
+    font-size: var(--font18);
+    font-weight: var(--font-medium);
+    line-height: 24px;
+}
+.modal-container .close {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    color:#000000;
+    align-items: center;
+}
+ .modal-container .close:hover,
+ .modal-container .close:focus {
+    outline: 0;
+} 
+.modal-container .modal-header-container {
+    display: flex;
+    margin-top: 16px;
+}
+.modal-container .modal-header-container .title{
+    color:#1E2843;
+    font-weight: var(--font-bold);
+    font-size: 22px;
+    line-height: 24px;
+}
+.modal-container .modal-header-container .subtitle {
+    color:#717084;
+    font-weight: var(--font-small-medium);
+    font-size: var(--font14);
+    line-height: 16px;
+}
+.modal-body-container .modal-body-title {
+    margin-top: 16px;
+}
+.modal-body-container .modal-body-title span {
+    color:#717084;
+}
+
+/* item box container popup extends the general subscription in this particular case*/
+
+.item-box-container {
+    width: 100%;
+    padding: 0;
+    background-color: var(--white-color);
+    box-shadow: none;
+    border-radius: 0;
+}
+.item-box-container:not(:first-child) {
+    margin: 20px 0px;
+}
+.item-box-container:not(:last-child) {
+    border-bottom: 1px solid var(--normal-textColor);
+}
+
+/* subscription-popup extends the general subscription in this particular case*/
+.subscription-card-wrapper {
+    width: 88px;
+    height: 72px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subscription-card-wrapper .text-wrapper  {
+    padding:0;
+}
+.subscription-card-wrapper .text-wrapper .price {
+    font-weight: var(--font-bold);
+    font-size: 22.4px;
+}
+.subscription-card-wrapper .text-wrapper .text {
+    font-size: 12.8px;
+}
+
+/* buton popup */
+.modal-body-container .button-primary  {
+    height: 50px;
+    width: 203px;
+    margin: 0;
+    margin-left: auto;
+}
+@media only screen and (max-width: 576px) {
+    .modal-container {
+        display: block;
+    }
+}

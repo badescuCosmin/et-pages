@@ -1,0 +1,26 @@
+{
+  "name": "et-dev",
+  "version": "1.0.0",
+  "description": "et-pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badescuCosmin/et-dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/badescuCosmin/et-dev/issues"
+  },
+  "homepage": "https://github.com/badescuCosmin/et-dev#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bootstrap": "^4.5.2",
+    "bootstrap-steps": "^1.0.2",
+    "jquery": "^3.5.1",
+    "roboto-fontface": "^0.10.0"
+  }
+}
