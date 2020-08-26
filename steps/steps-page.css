@@ -2,15 +2,6 @@
 .main-content {
     margin-top: 74px;
 }
-.info-container-wrapper .inner-wrapper {
-    width: 424px;
-    margin: 0 auto;
-}
-.photo-container-wrapper .photo-container {
-    height: 602px;
-    width: 424px;
-    background-color: orangered;
-}
 .input-container .small {
     width: 251px;
 }
