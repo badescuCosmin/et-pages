@@ -10,36 +10,34 @@
     <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css"> -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/roboto-fontface@0.10.0/css/roboto/roboto-fontface.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/roboto-fontface@0.10.0/css/roboto/roboto-fontface.min.css">
     <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="../general.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="basePlan.css">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="navbar-wrapper container">
             <div class="d-flex align-items-center">
-                <div
-                    class="navbar-btn-mobile d-flex d-lg-none mr-3 mr-lg-0 justify-content-center align-items-center flex-column">
+                <div class="navbar-btn-mobile d-flex d-lg-none mr-3 mr-lg-0 justify-content-center align-items-center flex-column">
                     <span></span>
                     <span></span>
                 </div>
-                <span class="">Logo</span>
+                <img class="logo" src="../assets/svg/Logo.png"  alt="logo">
             </div>
             <div class="navbar-links d-flex">
                 <ul class="navbar-links-center align-items-center d-none d-lg-flex">
                     <li class="navbar-link"><a>Toys</a></li>
                     <li class="navbar-link"><a>Mega Toys</a></li>
-                    <li class="navbar-link"><a>Lego</a></li>
-                    <li class="navbar-link"><a>Books</a></li>
+                    <li class="navbar-link"><a href="../orderFinalized/orderFinalized.html">Lego</a></li>
+                    <li class="navbar-link"><a href="../subscriptionConfirmation/subscriptionConfirmation.html">Books</a></li>
                 </ul>
                 <ul class="navbar-links-left align-items-center d-none d-lg-flex">
-                    <li class="navbar-link active"><a href="../steps/steps.html">Plans</a></li>
-                    <li class="navbar-link"><a href='../popup/popup.html'>Sign In</a></li>
-                    <button class="btn-navbar"><a>Create account</a></button>
+                    <li class="navbar-link active"><a href="../planSteps/plansSteps.html">Plans</a></li>
+                    <li class="navbar-link"><a href='../popupAddName/popupAddName.html'>Sign In</a></li>
+                    <button class="btn-navbar"><a href="../deliveryAddress/deliveryAddress.html">Create account</a></button>
                 </ul>
                 <ul class="navbar-links-mobile d-flex d-lg-none">
                     <span><img src="../assets/svg/User.svg" alt="user"></span>
@@ -49,14 +47,14 @@
         </div>
     </nav>
     <div class="main-content container position-relative">
-        <div class="main-content-body container">
+        <div class="main-content-body container p-0">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="subscription-container mx-auto">
                         <div class="subscription-details">
                             <div class="headers-container">
-                                <h1 class="main-content-title">Incepe acum!</h1>
-                                <h2 class="main-content-subtitle">Abonament de baza</h2>
+                                <h1 class="main-content-title">Incearca si tu!</h1>
+                                <h2 class="main-content-subtitle header-first">Abonament de baza</h2>
                             </div>
                             <div class="d-flex justify-content-between">
                                 <ul class="list-group">
@@ -65,7 +63,7 @@
                                             <i class="fas fa-check-circle"></i>
                                         </div>
                                         <div class="text-wrapper">
-                                            <div class="text">2 jucarii/luna</div>
+                                            <div class="text">2 jucarii</div>
                                         </div>
                                     </li>
                                     <li class="list-group-item d-flex">
@@ -73,7 +71,7 @@
                                             <i class="fas fa-check-circle"></i>
                                         </div>
                                         <div class="text-wrapper">
-                                            <div class="text">1 carte/luna</div>
+                                            <div class="text">1 carte</div>
                                         </div>
                                     </li>
                                     <li class="list-group-item d-flex">
@@ -81,7 +79,7 @@
                                             <i class="fas fa-check-circle"></i>
                                         </div>
                                         <div class="text-wrapper">
-                                            <div class="text">transport/luna inclus</div>
+                                            <div class="text">1 transport/lună inclus</div>
                                         </div>
                                     </li>
                                     <li class="list-group-item d-flex">
@@ -89,7 +87,15 @@
                                             <i class="fas fa-check-circle"></i>
                                         </div>
                                         <div class="text-wrapper">
-                                            <div class="text">Fara costuri ascunse</div>
+                                            <div class="text">Fără costuri ascunse</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex mt-18">
+                                        <div class="icon-wrapper">
+                                            <img src="../assets/svg/Schimb.svg" alt="">
+                                        </div>
+                                        <div class="text-wrapper">
+                                            <div class="text small-text">Pentru fiecare extra schimb vei achita 29 Ron</div>
                                         </div>
                                     </li>
                                 </ul>
@@ -103,52 +109,52 @@
                                 </div>
                             </div>
                         </div>
-                        <h3 class="header-first">Poți adăuga <span>(Opțional)</span> </h3>
+                        <h3 class="header-secondary">Poți adăuga <span>(Opțional)</span> </h3>
                         <div class="subscription-boxes">
                             <div class="item-box-container d-flex">
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" class="checkbox-style d-none">
+                                    <input type="checkbox" class="checkbox-style d-none" id='box1'>
                                     <i class="fas fa-plus fa-sm icon-style checkbox-icon-add"></i>
                                 </div>
                                 <div class="text-container w-100">
                                     <div class="main-text d-flex">
-                                        <span class="text text-style">1 jucarie suplimentara</span>
-                                        <span class="price text-style">+40.00</span>
+                                        <span class="text text-style">1 jucărie suplimentară</span>
+                                        <span class="price text-style">+30.00</span>
                                     </div>
-                                    <div class="sub-text">Vei putea alege 3 jucarii per comanda</div>
+                                    <div class="sub-text">vei putea alege 3 jucării per comandă</div>
                                 </div>
                             </div>
                             <div class="item-box-container d-flex">
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" class="checkbox-style d-none">
+                                    <input type="checkbox" class="checkbox-style d-none" id='box2'>
                                     <i class="fas fa-plus fa-sm icon-style checkbox-icon-add"></i>
                                 </div>
                                 <div class="text-container w-100">
                                     <div class="main-text d-flex">
-                                        <span class="text text-style">2 jucarie suplimentara</span>
-                                        <span class="price text-style">+20.00</span>
+                                        <span class="text text-style">2 Extra Books</span>
+                                        <span class="price text-style">+10.00</span>
                                     </div>
-                                    <div class="sub-text">Vei putea alege 3 jucarii per comanda</div>
+                                    <div class="sub-text">vei putea alege 3 cărți per comandă</div>
                                 </div>
                             </div>
                             <div class="item-box-container d-flex">
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" class="checkbox-style d-none">
+                                    <input type="checkbox" class="checkbox-style d-none" id='box3'>
                                     <i class="fas fa-plus fa-sm icon-style checkbox-icon-add"></i>
                                 </div>
                                 <div class="text-container w-100">
                                     <div class="main-text d-flex">
-                                        <span class="text text-style">1 jucarie suplimentara</span>
-                                        <span class="price text-style">+120.00</span>
+                                        <span class="text text-style">1 jucărie Mega Toy</span>
+                                        <span class="price text-style">+70.00</span>
                                     </div>
-                                    <div class="sub-text">Vei putea alege si o jucarie din portofoliul super-premium
+                                    <div class="sub-text">vei putea alege și o jucărie din portofoliul super-premium
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="btn-wrapper">
                             <div class="btn-mask d-none d-lg-block"></div>
-                            <button class="button-primary">Aboneaza-te acum!<span>130 Ron</span></button>
+                            <button  class="button-primary" id='abonament'>Aboneaza-te acum!<span>119.00</span><span>Ron</span></button>
                         </div>
                     </div>
                 </div>
@@ -157,48 +163,42 @@
                         <ul class="list-group">
                             <li class="list-group-item item">
                                 <div class="title">
-                                    De cate ori pot schimba jucariile?
+                                    De cate ori pot schimba jucăriile ?
                                 </div>
                                 <div class="text">
-                                    Poti comanda de mai multe ori pe parcursul unei luni, insa pretul abonamentului
-                                    include un singur transport/schimb lunar. Pentru extra schimbari va fi necesar sa
-                                    achiti de 29,-Lei/schimb.
+                                    Poti comanda oricand doresti. Din ratiuni logistice, te rugam sa lasi sa treaca cel putin o saptamana intre comenzi.
                                 </div>
                             </li>
                             <li class="list-group-item item">
                                 <div class="title">
-                                    Cat putem tine jucariile?
+                                    Cum schimb jucariile ?
                                 </div>
                                 <div class="text">
-                                    Nu exista perioade maxime de utilizare. Va bucurati de cutia Evertoys fix atat cat
-                                    vreti.
+                                    Foarte simplu, intregistrezi o comanda noua pe platforma Evertoys. Curierul iti aduce cutia noua si o preia pe cea veche.
                                 </div>
                             </li>
                             <li class="list-group-item item">
                                 <div class="title">
-                                    Cum igienizam jucariile??
+                                    Cum igienizam jucăriile ?
                                 </div>
                                 <div class="text">
-                                    Cu multa, multa atentie si seriozitate. Curatarea se face individual in functie de
-                                    materialul jucariei. Unde este cazul spalam piesa cu piesa si tratam cu bactericide
-                                    exologice netoxice si omologate UE.
+                                    Cu multă, multă atenție si seriozitate. Curățarea se face individual în funcție de materialul jucăriei. Unde este cazul spălam piesă cu piesă si tratăm cu bactericide ecologice netoxice și omologate UE.
                                 </div>
                             </li>
                             <li class="list-group-item item">
                                 <div class="title">
-                                    Ce se intampla daca se pierd piese sau ce strica jucarii?
+                                    Ce se întâmplă daca se pierd piese sau se strică jucării ?
                                 </div>
                                 <div class="text">
-                                    Nu-ti face griji, nu te penalizam in nici un fel pentru deteriorari sau piese
-                                    pierdute.
+                                    Nu-ți face griji, nu te penalizăm în nici un fel pentru deteriorări sau piese pierdute.
                                 </div>
                             </li>
                             <li class="list-group-item item">
                                 <div class="title">
-                                    Optional - trebuie sa semnez un contract?
+                                    Opțional – trebuie sa semnez un contract ?
                                 </div>
                                 <div class="text">
-                                    Fara perioada contractuala, poti suspenda sau anula oricand abonamentul.
+                                    Fără perioadă contractuală, poți suspenda sau anula oricând abonamentul.
                                 </div>
                             </li>
                         </ul>
@@ -207,7 +207,8 @@
             </div>
         </div>
     </div>
-    <script src="../steps/steps-page.js"></script>
+    <script src="basePlan.js"></script>
+    <script src="../GeneralMethods/generalMethods.js"></script>
 </body>
 
 </html>

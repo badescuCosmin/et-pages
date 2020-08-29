@@ -2,7 +2,8 @@ var inputType = {
     number: "number",
     text: "text",
     checkbox: "checkbox",
-    radiobox: "radiobox"
+    radiobox: "radiobox",
+    dropdown: "dropdown"
 }
 
 var charactersType = {
@@ -18,6 +19,7 @@ var triggerType = {
 }
 
 var displayNone = "d-none";
+var boxMainContainer = "box-main-container";
 var errorInputContainer = "error-input-container";
 var errorValidation = "error-validation";
 var errorBorder = "error-border";
@@ -39,9 +41,30 @@ validationMesages.getMaxCharactersErrorMessage = function(min, max) {
 }
 
 validationMesages.getEmailErrorMessage = function() {
-    return `Is is not a valid e-mail address`;
+    return `Invalid e-mail address`;
 }
 
 validationMesages.getAllowedAplhaCharactersErrorMessage = function() {
     return `Enter only alphabetical letters`;
+}
+
+validationMesages.getAllowedDigitsErrorMessage = function() {
+    return `Enter only digits`;
+}
+
+validationMesages.getAllowedAlphaNumericErrorMessage = function() {
+    return `Enter only letters and digits`;
+}
+
+
+validationMesages.getMaxValueErrorMessage = function(maxValue) {
+    return `The maximum value is ${maxValue}`;
+}
+
+validationMesages.getMinValueErrorMessage = function(minValue) {
+    return `The minimum value is ${minValue}`;
+}
+
+validationMesages.getCharactersLengthErrorMessage = function(length) {
+    return `Characters length required is ${length}`;
 }

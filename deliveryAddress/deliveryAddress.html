@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/roboto-fontface@0.10.0/css/roboto/roboto-fontface.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="deliveryAddress.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-wrapper container">
+            <div class="d-flex align-items-center">
+                <div class="navbar-btn-mobile d-flex d-lg-none mr-3 mr-lg-0 justify-content-center align-items-center flex-column">
+                    <span></span>
+                    <span></span>
+                </div>
+                <img class='logo' src="../assets/svg/Logo.png"  alt="logo">
+            </div>
+            <div class="navbar-links d-flex">
+                <ul class="navbar-links-center align-items-center d-none d-lg-flex">
+                    <li class="navbar-link"><a>Toys</a></li>
+                    <li class="navbar-link"><a>Mega Toys</a></li>
+                    <li class="navbar-link"><a href="../orderFinalized/orderFinalized.html">Lego</a></li>
+                    <li class="navbar-link"><a href="../subscriptionConfirmation/subscriptionConfirmation.html">Books</a></li>
+                </ul>
+                <ul class="navbar-links-left align-items-center d-none d-lg-flex">
+                    <li class="navbar-link active"><a href="../planSteps/plansSteps.html">Plans</a></li>
+                    <li class="navbar-link"><a href='../popupAddName/popupAddName.html'>Sign In</a></li>
+                    <button class="btn-navbar"><a href="../deliveryAddress/deliveryAddress.html">Create account</a></button>
+                </ul>
+                <ul class="navbar-links-mobile d-flex d-lg-none">
+                    <span><img src="../assets/svg/User.svg" alt="user"></span>
+                    <span><img src="../assets/svg/Cart.svg" alt="cart"></span>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-lg-6 info-container-wrapper">
+                <div class="inner-wrapper">
+                    <h3 class="header-first">Te rugăm sa completezi adresa de livrare</h3>
+                    <div class="container p-0 d-flex flex-column mt-40">
+                        <div class="row">
+                            <div class="col-6 input-container">
+                                <div class="dropdown-input-container">
+                                    <select class="dropdown-input-style" id="oras">
+                                        <option value="" disabled selected hidden>Oras</option>
+                                        <option class="dropdown-option" value="volvo">Bucuresti</option>
+                                        <option class="dropdown-option" value="saab">Iasi</option>
+                                        <option class="dropdown-option" value="opel">Bacau</option>
+                                        <option class="dropdown-option" value="audi">Vaslui</option>
+                                      </select>
+                                    <div class="error-input-container">
+                                        <span class="error-validation"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 input-container pl-0">
+                                <input type="text" class="input-style" placeholder="Zip Code" id="zipCode" />
+                                <div class="error-input-container">
+                                    <span class="error-validation"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9 input-container">
+                                <input type="text" class="input-style " placeholder="Strada" id="strada" />
+                                <div class="error-input-container">
+                                    <span class="error-validation"></span>
+                                </div>
+                            </div>
+                            <div class="col-3 input-container pl-0">
+                                <input type="text" class="input-style" placeholder="Numar" id="numar" />
+                                <div class="error-input-container">
+                                    <span class="error-validation"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" class="input-style" placeholder="Bloc / Etaj / Apartament" id="fullAdress" />
+                            <div class="error-input-container">
+                                <span class="error-validation"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="header-secondary my-32">Persoana de contact</h3>
+                    <div class="input-container">
+                        <input type="text" class="input-style" placeholder="Nume" id="name" />
+                        <div class="error-input-container">
+                            <span class="error-validation"></span>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" class="input-style" placeholder="Phone" id="phone" />
+                        <div class="error-input-container">
+                            <span class="error-validation"></span>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <h3 class="terms-text">- Vei primi ulterior un email de confirmare ce va conține detaliilecomenzii si informațiile de urmărire comandă</h3>
+                        <h3 class="terms-text">- Estimăm că comanda ta va ajunge in 3 zile lucrătoare
+                        </h3>
+                        <div class="btn-wrapper">
+                            <div class="btn-mask d-none d-lg-block"></div>
+                            <button class="button-primary" id='addressValidation'>Place order</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 photo-container-wrapper mt d-none d-lg-block">
+                <div class="photo-container">
+                    <img class="d-block" src="../assets/svg/DeliveryMan.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../InputRestrictor/inputRestrictor.js"></script>
+    <script src="../FormValidator/formValidationObjects.js"></script>
+    <script src="../FormValidator/FormValidator.js"></script>
+    <script src="../GeneralMethods/generalMethods.js"></script>
+    <script src="deliveryAddress.js"></script>
+</body>
+
+</html>

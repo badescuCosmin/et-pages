@@ -1,0 +1,31 @@
+.main-content {
+    margin-top: 146px;
+}
+.main-content .photo-container-wrapper.mt{
+    margin-top: 98px;
+}
+.info-container-wrapper .inner-wrapper .mt-40 {
+    margin-top: 40px;
+}
+.info-container-wrapper .inner-wrapper .my-32 {
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+.info-container-wrapper .inner-wrapper .terms h3:nth-child(1) {
+    margin-top: 4px;
+}
+.info-container-wrapper .inner-wrapper .terms .btn-wrapper {
+    margin-top: 93px;
+}
+
+@media only screen and (max-width: 576px) {
+    .info-container-wrapper .inner-wrapper .mt-40 {
+        margin-top: 22px;
+    }
+    .info-container-wrapper .inner-wrapper .my-32 {
+        margin-bottom: 16px;
+    }
+    .info-container-wrapper .inner-wrapper .terms .btn-wrapper {
+        margin-top: 72px;
+    }
+}

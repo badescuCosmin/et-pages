@@ -1,0 +1,54 @@
+/* the styles for modal */
+.modal-container .modal-header-container {
+    display: flex;
+    margin-top: 8px;
+}
+.modal-container .modal-header-container .title {
+    color: #1e2843;
+    font-weight: var(--font-medium);
+    font-size: var(--font18);
+    line-height: 24px;
+}
+
+.modal-body-container .description .description-img {
+    height: 55px;
+    width: 36px;
+}
+.modal-body-container .description-info {
+    font-size: var(--font14);
+    font-weight: var(--font-small-medium);
+    color:var(--normal-textColor);
+    line-height: 22px;
+    margin-left: 14px;
+}
+
+.modal-body-container .options-container {
+    margin-top: 36px;
+}
+
+.modal-body-container .options-container .add,
+.modal-body-container .options-container .remove_field{
+    color:var(--primary-color);
+    font-size: var(--font16);
+    line-height: 20px;
+    font-weight: var(--font-small-medium);
+    cursor: pointer;
+}
+
+.modal-body-container .options-container .footer{
+   margin-top: 54px;
+   display: flex;
+   align-items: center;
+}
+
+.modal-body-container .options-container .footer p{
+   margin: 0;
+   cursor: pointer;
+   line-height: 20px;
+ }
+
+.modal-body-container .button-primary  {
+    width: 144px;
+}
+
+

@@ -1,14 +1,7 @@
 /* grid styles */
 .main-content {
-    margin-top: 74px;
+    margin-top: 154px;
 }
-.input-container .small {
-    width: 251px;
-}
-.input-container .xs-small {
-    width: 158px;
-}
-
 /* step2 styles */
 .step-2 .container-photos {
     height: 45px;
@@ -111,7 +104,7 @@
 }
 .item-box-container .currency {
     font-size: var(--font12);
-    color: #717084;
+    color:var(--light-grey);
     padding-top: 5px;
     font-weight: var(--font-small-medium);
 }
@@ -136,7 +129,12 @@
 .padding-left-10 {
     padding-left: 10px;
 }
-
+.subscribe-pachet-details img {
+    width: 14px;
+    height: 18px;
+    margin-top: 2px;
+    margin-right: 8px;
+}
 /* checkboxes*/
 .container-checkbox {
     display: block;
@@ -149,11 +147,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    max-width: 426px; 
-}
-.container-checkbox:not(:last-child) {
-    margin-bottom: 15px;
-    margin-top: 17px;
+    width: 100%;
 }
 .container-checkbox input {
     position: absolute;
@@ -257,25 +251,13 @@
     opacity: 80%;
 }
 .dark-violet {
-    background-color: #41436B!important;
+    background-color:var(--normal-textColor)!important;
 }
 .d-none-custom {
     display: none;
 }
 /* media queris */
 @media only screen and (max-width: 576px) {
-    .dotted-input-container .dotted-input-style,
-    .input-container .input-style,
-    .dotted-input-container,
-    .info-container-wrapper .inner-wrapper {
-        width: 335px;
-    }
-    .dotted-input-container .dotted-input-style {
-        width: 303px;
-    }
-    .container-checkbox {
-        max-width: 335px;
-    }
     .step-2 .footer-info {
         margin-bottom: 80px;
     }
@@ -287,18 +269,6 @@
     }
 }
 @media only screen and (max-width: 362px) {
-    .dotted-input-container .dotted-input-style,
-    .input-container .input-style,
-    .dotted-input-container,
-    .info-container-wrapper .inner-wrapper {
-        width: 300px;
-    }
-    .dotted-input-container .dotted-input-style {
-        width: 265px;
-    }
-    .container-checkbox {
-        max-width: 300px;
-    }
     .steps-container .step-wrapper .line-wrapper .line {
         width: 64px;
     }
@@ -307,22 +277,7 @@
     }
 }
 @media only screen and (max-width: 330px) {
-    .dotted-input-container .dotted-input-style,
-    .input-container .input-style,
-    .dotted-input-container,
-    .info-container-wrapper .inner-wrapper {
-        width: 280px;
-    }
-    .dotted-input-container .dotted-input-style {
-        width: 245px;
-    }
-    .container-checkbox {
-        max-width: 280px;
-    }
     .steps-container .step-wrapper .line-wrapper .line {
         width: 59px;
-    }
-    .step-2 .container-photos img:first-child {
-        display: none;
     }
 }

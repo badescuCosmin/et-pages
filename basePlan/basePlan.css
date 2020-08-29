@@ -1,24 +1,20 @@
 
 /* content grid styles responsive */
 .main-content {
-    margin-top: 80px;
+    margin-top: 150px;
 }
 .main-content .main-content-title {
-    color: #f52865;
+    color: var(--red-color);
     font-size: var(--font24);
     font-weight: var(--font-medium);
     line-height: 24px;
 }
 .main-content .main-content-subtitle {
-    color: #1e2843;
-    font-size: var(--font24);
-    font-weight: var(--font-bold);
     line-height: 24px;
 }
 .main-content .main-content-body .questions-container {
     max-width: 370px;
     margin-top: 80px;
-    background-color: red;
 }
 .main-content .main-content-body .subscription-container {
     max-width: 430px;
@@ -52,6 +48,14 @@
     font-family: 'Roboto-Regular';
     color: #17194C;
     font-size: var(--font18);
+}
+
+.subscription-container .list-group-item .text-wrapper .small-text{
+    font-size: var(--font14);
+    line-height: 20px;
+}
+.mt-18 {
+    margin-top: 18px;
 }
 
 /* questions */
@@ -91,12 +95,12 @@
     .main-content .main-content-body .subscription-container .subscription-boxes {
         margin-bottom: 20px;
     }
+    .subscription-container .list-group-item .text-wrapper {
+        font-size: var(--font16);
+    }
 }
 
 @media only screen and (max-width: 576px) {
-    .main-content {
-        margin-top: 35px;
-    }
     .main-content .main-content-body .subscription-container h3 {
         margin-top: 40px;
         margin-bottom: 16px;
@@ -113,5 +117,8 @@
     }
     .subscription-container .list-group-item .text-wrapper {
         line-height: 25px;
+    }
+    .main-content {
+        margin-top: 100px;
     }
 }

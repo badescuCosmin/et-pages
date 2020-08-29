@@ -29,7 +29,7 @@ var FormValidator = (function() {
                             var value = $(`#${input.id}`).val();
                             var $parentContainer = $(`#${input.id}`).parent();
                             var numberOfCharacters = value.replace(/ /g, '').length;
-                            _setValidationForTextInput.apply(this, [input, $parentContainer, numberOfCharacters, value]);
+                            _setValidationForTextInput.apply(self, [input, $parentContainer, numberOfCharacters, value]);
                             self.inputsDetails.push({
                                 id: input.id,
                                 value: value,
@@ -39,11 +39,41 @@ var FormValidator = (function() {
                         }
                     case inputType.number:
                         {
-                            _setValidationForNumberInput.apply(this, [input]);
+                            var value = $(`#${input.id}`).val();
+                            var $parentContainer = $(`#${input.id}`).parent();
+                            _setValidationForNumberInput.apply(self, [input, $parentContainer, value]);
+                            self.inputsDetails.push({
+                                id: input.id,
+                                value: value,
+                                isValid: input.isValid
+                            })
+                            break;
+                        }
+                    case inputType.dropdown:
+                        {
+                            var value = $(`#${input.id}`).val();
+                            var $parentContainer = $(`#${input.id}`).parent();
+                            _setValidationForDropdown.apply(self, [input, $parentContainer, value]);
+                            self.inputsDetails.push({
+                                id: input.id,
+                                value: value,
+                                isValid: input.isValid
+                            })
+                            break;
+                        }
+                    case inputType.checkbox:
+                        {
+                            var value = $(`#${input.id}`).val();
+                            _setValidationForCheckboxInput.apply(self, [input, value]);
+                            self.inputsDetails.push({
+                                id: input.id,
+                                value: value,
+                                isValid: input.isValid
+                            })
                             break;
                         }
                     default:
-                        console.log('no type');
+                        console.log(`Type doesn't exist`);
                 }
             }
         })
@@ -52,40 +82,58 @@ var FormValidator = (function() {
     }
 
     FormValidator.prototype.setValidateByTriggerType = function(input) {
+        var self = this;
         if (input) {
-            if (input.triggerType) {
-                switch (input.triggerType) {
-                    case triggerType.keypress:
-                        {
-                            this.setKeypressTrigger(input);
-                            break;
-                        }
-                    default:
-                        this.setOnChangeTrigger(input);
-                }
+            switch (input.triggerType) {
+                case triggerType.keypress:
+                    {
+                        self.setKeypressTrigger(input);
+                        break;
+                    }
+                case triggerType.click:
+                    {
+                        self.setOnClickTrigger(input);
+                    }
+                default:
+                    self.setOnChangeTrigger(input);
             }
 
-            if (input.type === inputType.checkbox) {
-                _setOnClickTrigger.apply(this, [input])
-            }
+            // if (input.type === inputType.checkbox) {
+            //     self.setOnClickTrigger(input);
+            // }
         }
     }
 
     FormValidator.prototype.setKeypressTrigger = function(input) {
         $(`#${input.id}`).on('keypress', function() {
             {
-                // console.log('On keypress');
-                // var self = $(this);
-                // var value = this.value;
-                // _setRequiredValidation(self, value, input);
+                //CODE IN PROGRESS
             }
         })
     }
 
-    function _setOnClickTrigger(input) {
-        $(`#${input.id}`).on('click', function() {
-            var value = this.value;
-            _setValidationForCheckboxInput.apply(this, [input, value]);
+    FormValidator.prototype.setOnClickTrigger = function(input) {
+        var self = this;
+        var $domElement = $({});
+        if (input.parent) {
+            $domElement = $(`#${input.id}`).parents(`.${input.parent}`);
+        } else {
+            $domElement = $(`#${input.id}`);
+        }
+
+        $domElement.on('click', function() {
+            if (input.type) {
+                switch (input.type) {
+                    case inputType.checkbox:
+                        {
+                            var value = $(`#${input.id}`).val();
+                            _setValidationForCheckboxInput.apply(self, [input, value]);
+                            break;
+                        }
+                    default:
+                        console.log(`Type doesn't exist`);
+                }
+            }
         })
     }
 
@@ -93,61 +141,88 @@ var FormValidator = (function() {
         var self = this;
         $(`#${input.id}`).on('change', function() {
             {
+                var value = this.value;
+                var $parentContainer = $(this).parent();
                 if (input.type) {
                     switch (input.type) {
                         case inputType.text:
                             {
-                                var value = this.value;
-                                var $parentContainer = $(this).parent();
                                 var numberOfCharacters = value.replace(/ /g, '').length;
-
-                                _setValidationForTextInput.apply(this, [input, $parentContainer, numberOfCharacters, value]);
+                                _setValidationForTextInput.apply(self, [input, $parentContainer, numberOfCharacters, value]);
                                 break;
                             }
                         case inputType.number:
                             {
-                                _setValidationForNumberInput.apply(this, [input]);
+                                _setValidationForNumberInput.apply(self, [input, $parentContainer, value]);
+                                break;
+                            }
+                        case inputType.dropdown:
+                            {
+                                _setValidationForDropdown.apply(self, [input, $parentContainer, value]);
+                                break;
+                            }
+                        case inputType.radiobox:
+                            {
+                                _setValidationForRadioBoxInput
                                 break;
                             }
                         default:
-                            console.log('no type');
+                            console.log(`Type doesn't exist`);
                     }
                 }
-                console.log("The input is", input);
             }
         })
     }
 
+    //TEXT INPUT
     function _setValidationForTextInput(input, $parentContainer, numberOfCharacters, value) {
         input.ErrorMessages = [];
         _getRequiredValidation(value, input);
         _getEmailValidation(input, value);
+        _getAllowedDigitsValidation(input, value);
         _getAllowedCharactersValidation(input, value);
+        _getAllowedAlphaNumericValidation(input, value);
+        _getCharactersLengthValidation(input, numberOfCharacters);
         _getMinCharactersValidation(input, numberOfCharacters);
-        //ADD THE ERROR MESSAGE ON UI
         _setInputValidation.apply(this, [input, $parentContainer])
     }
 
-    function _setValidationForNumberInput(input) {
-
+    //NUMBER INPUT
+    function _setValidationForNumberInput(input, $parentContainer, value) {
+        input.ErrorMessages = [];
+        _getRequiredValidation(value, input);
+        _getAllowedDigitsValidation(input, value);
+        _getMinAndMaxValueValidation(input, value);
+        _setInputValidation.apply(this, [input, $parentContainer])
     }
 
+    //DROPDOWN SELECT
+    function _setValidationForDropdown(input, $parentContainer, value) {
+        input.ErrorMessages = [];
+        _getRequiredValidation(value, input);
+        _setInputValidation.apply(this, [input, $parentContainer])
+    }
+
+    //CHECKBOX
     function _setValidationForCheckboxInput(input, value) {
         input.ErrorMessages = [];
-        console.log("_setValidationForCheckboxInput");
-        if (input.required) {
-            if (!$(`#${input.id}`).is(':checked')) {
-                console.log('E NEAPARATA NEVOIE DE EEAAA');
-            } else {
-                console.log('E APASATA');
-            }
+        if ($(`#${input.id}`).is(':checked')) {
+            _getRequiredValidation(value, input);
+        } else {
+            value = "";
+            _getRequiredValidation(value, input);
         }
+
+        var $parentContainer = $(`#${input.id}`).parents(`.${boxMainContainer}`);
+        _setInputValidation.apply(this, [input, $parentContainer])
     }
 
+    //RADIOBOX
     function _setValidationForRadioBoxInput(input) {
-
+        //CODE IN PROGRESS
     }
 
+    //ADD THE ERROR MESSAGE ON UI
     function _setInputValidation(input, $parentContainer) {
         var errorMessage = "";
         if (input.ErrorMessages.length > 0) {
@@ -167,7 +242,7 @@ var FormValidator = (function() {
         if (input.allowedCharacters) {
             if (input.allowedCharacters === charactersType.alpha) {
                 if (value) {
-                    var pattern = /^[a-zA-Z]*$/i;
+                    var pattern = /^[a-zA-Z ]*$/i;
                     var isvalid = _isValueValid(value, pattern);
                     if (!isvalid) {
                         errorMessage = validationMesages.getAllowedAplhaCharactersErrorMessage();
@@ -180,29 +255,36 @@ var FormValidator = (function() {
         }
     }
 
-    function _getRequiredValidation(value, input) {
+    function _getAllowedDigitsValidation(input, value) {
         var errorMessage = "";
-        if (input.required) {
-            if (!value) {
-                errorMessage = validationMesages.getRequiredErrorMessage(input.fieldLabel);
-            }
-            if (errorMessage) {
-                input.ErrorMessages.push(errorMessage);
+        if (input.allowedCharacters) {
+            if (input.allowedCharacters === charactersType.numeric) {
+                var patternDigits = /^[0-9-+() /]*$/;
+                var patternLetters = /^[a-zA-Z]*$/i;
+                var isvalidDigits = _isValueValid(value, patternDigits);
+                var isvalidLetters = _isValueValid(value, patternLetters);
+                if ((!isvalidLetters && !isvalidDigits) || !isvalidDigits) {
+                    errorMessage = validationMesages.getAllowedDigitsErrorMessage();
+                }
+                if (errorMessage) {
+                    input.ErrorMessages.push(errorMessage);
+                }
             }
         }
     }
 
-    function _getMinCharactersValidation(input, numberOfCharacters) {
+    function _getAllowedAlphaNumericValidation(input, value) {
         var errorMessage = "";
-        if (input.minLength || input.minLength && input.maxLength) {
-            if (input.minLength > numberOfCharacters && numberOfCharacters !== 0) {
-                errorMessage = validationMesages.getMinCharactersErrorMessage(input.minLength);
-            }
-            if (input.maxLength < numberOfCharacters) {
-                errorMessage = validationMesages.getMaxCharactersErrorMessage(input.minLength, input.maxLength);
-            }
-            if (errorMessage) {
-                input.ErrorMessages.push(errorMessage);
+        if (input.allowedCharacters) {
+            if (input.allowedCharacters === charactersType.alphaNumeric) {
+                var pattern = /^[a-zA-Z0-9 ]+$/;
+                var isvalid = _isValueValid(value, pattern);
+                if (!isvalid) {
+                    errorMessage = validationMesages.getAllowedAlphaNumericErrorMessage();
+                }
+                if (errorMessage) {
+                    input.ErrorMessages.push(errorMessage);
+                }
             }
         }
     }
@@ -223,6 +305,62 @@ var FormValidator = (function() {
         }
     }
 
+    function _getRequiredValidation(value, input) {
+        var errorMessage = "";
+        if (input.required) {
+            if (!value) {
+                errorMessage = validationMesages.getRequiredErrorMessage(input.fieldLabel);
+            }
+            if (errorMessage) {
+                input.ErrorMessages.push(errorMessage);
+            }
+        }
+    }
+
+    function _getMinCharactersValidation(input, numberOfCharacters) {
+        var errorMessage = "";
+        if (input.minLength && input.maxLength || input.minLength) {
+            if (input.minLength > numberOfCharacters && numberOfCharacters !== 0) {
+                errorMessage = validationMesages.getMinCharactersErrorMessage(input.minLength);
+            }
+            if (input.maxLength < numberOfCharacters) {
+                errorMessage = validationMesages.getMaxCharactersErrorMessage(input.minLength, input.maxLength);
+            }
+            if (errorMessage) {
+                input.ErrorMessages.push(errorMessage);
+            }
+        }
+    }
+
+    function _getMinAndMaxValueValidation(input, value) {
+        var errorMessage = "";
+        if (input.maxValue || input.minValue) {
+            if (value) {
+                if (value < input.minValue) {
+                    errorMessage = validationMesages.getMinValueErrorMessage(input.minValue);
+                }
+                if (value > input.maxValue) {
+                    errorMessage = validationMesages.getMaxValueErrorMessage(input.maxValue);
+                }
+                if (errorMessage) {
+                    input.ErrorMessages.push(errorMessage);
+                }
+            }
+        }
+    }
+
+    function _getCharactersLengthValidation(input, numberOfCharacters) {
+        var errorMessage = "";
+        if (input.charactersLength > 0) {
+            if (input.charactersLength !== numberOfCharacters) {
+                errorMessage = validationMesages.getCharactersLengthErrorMessage(input.charactersLength);
+            }
+            if (errorMessage) {
+                input.ErrorMessages.push(errorMessage);
+            }
+        }
+    }
+
     function _isValid() {
         var isValid = true;
         this.inputsDetails.forEach(function(element) {
@@ -234,8 +372,8 @@ var FormValidator = (function() {
         return isValid;
     }
 
-    function _isValueValid(emailAddress, pattern) {
-        return pattern.test(emailAddress);
+    function _isValueValid(value, pattern) {
+        return pattern.test(value);
     }
 
 
