@@ -7,15 +7,6 @@ $(document).ready(function() {
         inputRestrictor.setInputWithExactCharactersLength("phone", 10);
 
         var inputs = [
-
-            {
-                id: 'cvv',
-                fieldLabel: 'Cvv',
-                required: true,
-                type: 'text',
-                charactersLength: 3,
-                allowedCharacters: 'Numeric'
-            },
             {
                 id: 'oras',
                 fieldLabel: 'Select a city',
