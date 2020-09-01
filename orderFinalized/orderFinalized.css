@@ -116,4 +116,10 @@
     .main-content {
         margin-top: 100px;
     }
+    .main-content .inner-wrapper .subtitle {
+        margin-bottom: 20px;
+    }
+    .info-container-wrapper .inner-wrapper .box-image img{
+        margin-top: 38px;
+    }
 }

@@ -321,7 +321,7 @@ var FormValidator = (function() {
         var errorMessage = "";
         if (input.minLength && input.maxLength || input.minLength) {
             if (input.minLength > numberOfCharacters && numberOfCharacters !== 0) {
-                errorMessage = validationMesages.getMinCharactersErrorMessage(input.minLength);
+                errorMessage = validationMesages.getMinCharactersErrorMessage(input, input.minLength);
             }
             if (input.maxLength < numberOfCharacters) {
                 errorMessage = validationMesages.getMaxCharactersErrorMessage(input.minLength, input.maxLength);

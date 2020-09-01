@@ -3,11 +3,9 @@ $(document).ready(function() {
     (function setInput() {
         inputRestrictor.setInputOnlyWithDigits("phone");
         inputRestrictor.setInputOnlyWithDigits("zipCode");
-        inputRestrictor.setInputWithExactCharactersLength("zipCode", 6);
-        inputRestrictor.setInputWithExactCharactersLength("phone", 10);
+        
 
-        var inputs = [
-            {
+        var inputs = [{
                 id: 'oras',
                 fieldLabel: 'Select a city',
                 type: 'dropdown',
@@ -16,7 +14,8 @@ $(document).ready(function() {
             {
                 id: 'zipCode',
                 fieldLabel: 'Zip Code',
-                charactersLength: 6,
+                minLength:4,
+                maxLength:8,
                 required: true,
                 type: 'text',
                 allowedCharacters: 'Numeric'
@@ -25,6 +24,7 @@ $(document).ready(function() {
                 id: 'strada',
                 fieldLabel: 'Strada',
                 type: 'text',
+                minLength:5,
                 allowedCharacters: 'AlphaNumeric',
                 required: true
             },
@@ -32,19 +32,18 @@ $(document).ready(function() {
                 id: 'numar',
                 fieldLabel: 'Numar',
                 type: 'text',
+                minLength:1,
                 allowedCharacters: 'AlphaNumeric',
                 required: true,
             },
             {
                 id: 'fullAdress',
                 fieldLabel: 'Adresa Completa',
-                required: true,
-                type: 'text',
-                allowedCharacters: 'AlphaNumeric',
+                type: 'text'
             },
             {
                 id: 'name',
-                fieldLabel: 'Name',
+                fieldLabel: 'Nume',
                 required: true,
                 type: 'text',
                 minLength: '3',
@@ -55,7 +54,8 @@ $(document).ready(function() {
                 fieldLabel: 'Phone',
                 required: true,
                 type: 'text',
-                charactersLength: 10,
+                minLength:10,
+                maxLength:13,
                 allowedCharacters: 'Numeric'
             }
         ]

@@ -14,10 +14,22 @@ $(document).ready(function() {
         inputRestrictor.setInputWithExactCharactersLength("dataExpirare", 5);
         inputRestrictor.putCharacterAfterNumberOfCharacters("dataExpirare", "/", 2);
         inputRestrictor.setDate("dataExpirare");
+        //
+        inputRestrictor.onFocus('prenumeTest');
+        inputRestrictor.focusNextElement([
+            'firstName',
+            'lastName',
+            'email',
+            'password',
+            'discount',
+            'terms1',
+            'terms2',
+            'step1Validation'
+        ]);
 
         var step1Inputs = [{
                     id: 'lastName',
-                    fieldLabel: 'Name',
+                    fieldLabel: 'Prenumele',
                     required: true,
                     type: 'text',
                     minLength: '3',
@@ -25,7 +37,7 @@ $(document).ready(function() {
                 },
                 {
                     id: 'firstName',
-                    fieldLabel: 'First Name',
+                    fieldLabel: 'Numele',
                     required: true,
                     type: 'text',
                     minLength: '3',
@@ -33,10 +45,10 @@ $(document).ready(function() {
                 },
                 {
                     id: 'password',
-                    fieldLabel: 'Password',
+                    fieldLabel: 'Parola',
                     required: true,
                     type: 'text',
-                    minLength: '3',
+                    minLength: '7',
                     allowedCharacters: 'AlfaNumeric',
                 },
                 {
@@ -69,7 +81,6 @@ $(document).ready(function() {
                 fieldLabel: 'Nume Card',
                 required: true,
                 type: 'text',
-                maxLength: '20',
                 minLength: '5',
                 allowedCharacters: 'Alpha',
             },

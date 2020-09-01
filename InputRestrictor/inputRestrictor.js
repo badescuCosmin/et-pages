@@ -38,4 +38,18 @@ var inputRestrictor = {};
             }
         });
     }
+
+    inputRestrictor.focusNextElement = function(inputsIds) {
+        inputsIds.forEach(function(id, index) {
+            $(`#${id}`).on('keypress input', function(e) {
+                if (e.which === 13) {
+                    $(`#${inputsIds[index+1]}`).focus();
+                }
+            })
+        });
+    }
+
+    inputRestrictor.onFocus = function(inputName) {
+        $(`input[name=${inputName}]`).focus();
+    }
 }());

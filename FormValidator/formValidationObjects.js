@@ -29,42 +29,42 @@ validationMesages.getRequiredErrorMessage = function(field) {
     if (!field) {
         field = "Field";
     }
-    return `${field} is required`;
+    return `Te rugăm să completezi acest camp`;
 }
 
-validationMesages.getMinCharactersErrorMessage = function(number) {
-    return `Enter at least ${number} characters`;
+validationMesages.getMinCharactersErrorMessage = function({fieldLabel},number) {
+    return `${fieldLabel} trebuie sa aiba cel putin ${number} caractere`
 }
 
 validationMesages.getMaxCharactersErrorMessage = function(min, max) {
-    return `Enter a value between  ${min} and ${max} characters long`;
+    return `Introduceti o valoare intre ${min} si ${max} caractere`;
 }
 
 validationMesages.getEmailErrorMessage = function() {
-    return `Invalid e-mail address`;
+    return `Adresa de email incorecta`;
 }
 
 validationMesages.getAllowedAplhaCharactersErrorMessage = function() {
-    return `Enter only alphabetical letters`;
+    return `Introduceti doar litere`;
 }
 
 validationMesages.getAllowedDigitsErrorMessage = function() {
-    return `Enter only digits`;
+    return `Introduceti doar cifre`;
 }
 
 validationMesages.getAllowedAlphaNumericErrorMessage = function() {
-    return `Enter only letters and digits`;
+    return `Introduceti doar litere si cifre`;
 }
 
 
 validationMesages.getMaxValueErrorMessage = function(maxValue) {
-    return `The maximum value is ${maxValue}`;
+    return `Valoarea maxima este ${maxValue}`;
 }
 
 validationMesages.getMinValueErrorMessage = function(minValue) {
-    return `The minimum value is ${minValue}`;
+    return `Valoarea minima este ${minValue}`;
 }
 
 validationMesages.getCharactersLengthErrorMessage = function(length) {
-    return `Characters length required is ${length}`;
+    return `Numarul de caractere oblicatoriu este ${length}`;
 }

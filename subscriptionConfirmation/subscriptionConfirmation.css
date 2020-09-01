@@ -100,6 +100,12 @@
     .main-container .card-wrapper {
         width: 90%;
     }
+    .main-container .card-subscription {
+        margin-top: 120px;
+    }
+    .main-container .card-body.card-footer-subscription.card-footer-info {
+        margin-top: 100px;
+    }
 }
 
 

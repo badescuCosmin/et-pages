@@ -5,7 +5,7 @@ $(document).ready(function () {
     var x = 1;
     var inputs = [{
         id: 'name',
-        fieldLabel: 'Name',
+        fieldLabel: 'Prenume',
         required: true,
         type: 'text',
         minLength: '3',
@@ -42,7 +42,7 @@ $(document).ready(function () {
             `);
             inputs.push({
                 id:`name${x}`,
-                fieldLabel: 'Name',
+                fieldLabel: 'Prenume',
                 required: true,
                 type: 'text',
                 minLength: '3',
