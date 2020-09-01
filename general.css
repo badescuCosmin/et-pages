@@ -439,3 +439,13 @@ body {
     }
 }
 
+@media (resolution: 120dpi){ 
+    body {
+        zoom:75%;
+    }
+}
+@media (min-resolution: 144dpi){ 
+   body {
+       zoom:67%;
+   }
+}
