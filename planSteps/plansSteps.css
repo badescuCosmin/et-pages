@@ -257,13 +257,20 @@
     display: none;
 }
 /* media queris */
-@media only screen and (max-width: 576px) {
-    .step-2 .footer-info {
-        margin-bottom: 80px;
+
+@media only screen and (max-width: 992px) {
+    .main-content {
+        margin-top: 120px;
     }
+    .step-2 .footer-info {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (max-width: 576px) {
     .steps-container .step-wrapper .line-wrapper .line {
         width: 87px;
     }
+   
 }
 @media only screen and (max-width: 362px) {
     .steps-container .step-wrapper .line-wrapper .line {
