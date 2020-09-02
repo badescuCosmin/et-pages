@@ -1,4 +1,5 @@
 $(document).ready(function() {
-    generalMethods.setCheckbox();
+    const noBorders = true;
+    generalMethods.setCheckbox(noBorders);
     generalMethods.setButton()
 })

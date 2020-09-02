@@ -17,7 +17,7 @@ var generalMethods = {};
         $stepsContainer = $('.steps-container'),
         $stepsContent = $('.steps-content');
 
-    generalMethods.setCheckbox = function() {
+    generalMethods.setCheckbox = function(noBorders) {
         $itemBoxContainer.on('click', function () {
             const $checkContainer = $(this).find('.checkbox-wrapper');
             const $parentContainer = $checkContainer.parent();
@@ -28,14 +28,14 @@ var generalMethods = {};
                 icon.remove();
                 $checkContainer.append(checkIcon);
                 $checkContainer.addClass(checkBackground);
-                $parentContainer.css('border', solidBlueBorder);
+                if(!noBorders) $parentContainer.css('border', solidBlueBorder);
                 $parentContainer.find("span").addClass(blueColorClass)
             } else {
                 icon.remove();
                 $checkContainer.removeClass(checkBackground);
                 $checkbox.attr('checked', false);
                 $checkContainer.append(addIcon);
-                $parentContainer.css('border', transparentBorder);
+                if(!noBorders) $parentContainer.css('border', transparentBorder);
                 $parentContainer.find("span").removeClass(blueColorClass)
             }
         })
@@ -110,12 +110,12 @@ var generalMethods = {};
             firstActiveStepContent.addClass('d-none-custom');
             firstActiveStepContent.removeAttr("style");
             nextStep.addClass('active');
-            nextStep.show('slow');
+            nextStep.show(50,'linear');
 
         } else {
             var firstActiveStepContent = $stepsContent.find('.step-content').first();
             firstActiveStepContent.addClass('active');
-            firstActiveStepContent.show('slow');
+            firstActiveStepContent.show(50,'linear');
         }
     }
     generalMethods.goNextStep = function(stepToValidate){

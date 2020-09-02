@@ -32,7 +32,7 @@ validationMesages.getRequiredErrorMessage = function(field) {
     return `Te rugăm să completezi acest camp`;
 }
 
-validationMesages.getMinCharactersErrorMessage = function({fieldLabel},number) {
+validationMesages.getMinCharactersErrorMessage = function({ fieldLabel }, number) {
     return `${fieldLabel} trebuie sa aiba cel putin ${number} caractere`
 }
 

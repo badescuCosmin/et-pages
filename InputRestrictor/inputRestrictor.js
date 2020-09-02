@@ -49,7 +49,7 @@ var inputRestrictor = {};
         });
     }
 
-    inputRestrictor.onFocus = function(inputName) {
-        $(`input[name=${inputName}]`).focus();
+    inputRestrictor.onFocus = function(inputId) {
+        $(`#${inputId}`).get(0).focus();
     }
 }());

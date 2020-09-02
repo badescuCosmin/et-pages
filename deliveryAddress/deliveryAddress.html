@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="deliveryAddress.css">
 </head>
 
-<body>
+<body class="content">
     <nav class="navbar">
         <div class="navbar-wrapper container">
             <div class="d-flex align-items-center">
@@ -53,7 +53,7 @@
                     <h3 class="header-first">Te rugăm sa completezi adresa de livrare</h3>
                     <div class="container p-0 d-flex flex-column mt-40">
                         <div class="row">
-                            <div class="col-6 input-container">
+                            <div class="col-4 input-container">
                                 <div class="dropdown-input-container">
                                     <select class="dropdown-input-style" id="oras">
                                         <option value="" disabled selected hidden>Oras</option>
@@ -67,7 +67,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 input-container pl-0">
+                            <div class="col-4 input-container pl-0">
+                                <div class="dropdown-input-container">
+                                    <select class="dropdown-input-style" id="judet">
+                                        <option value="" disabled selected hidden>Judet</option>
+                                        <option class="dropdown-option" value="volvo">Dolj</option>
+                                        <option class="dropdown-option" value="saab">Gorj</option>
+                                        <option class="dropdown-option" value="opel">Mehedinti</option>
+                                      </select>
+                                    <div class="error-input-container">
+                                        <span class="error-validation"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 input-container pl-0">
                                 <input type="text" class="input-style" placeholder="Zip Code" id="zipCode" />
                                 <div class="error-input-container">
                                     <span class="error-validation"></span>
@@ -75,23 +88,37 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-9 input-container">
+                            <div class="col-8 input-container">
                                 <input type="text" class="input-style " placeholder="Strada" id="strada" />
                                 <div class="error-input-container">
                                     <span class="error-validation"></span>
                                 </div>
                             </div>
-                            <div class="col-3 input-container pl-0">
+                            <div class="col-4 input-container pl-0">
                                 <input type="text" class="input-style" placeholder="Numar" id="numar" />
                                 <div class="error-input-container">
                                     <span class="error-validation"></span>
                                 </div>
                             </div>
                         </div>
-                        <div class="input-container">
-                            <input type="text" class="input-style" placeholder="Bloc / Etaj / Apartament" id="fullAdress" />
-                            <div class="error-input-container">
-                                <span class="error-validation"></span>
+                        <div class="row">
+                            <div class="col-4 input-container">
+                                <input type="text" class="input-style" placeholder="Bloc" id="bloc" />
+                                <div class="error-input-container">
+                                    <span class="error-validation"></span>
+                                </div>
+                            </div>
+                            <div class="col-4 input-container pl-0">
+                                <input type="text" class="input-style" placeholder="Etaj" id="etaj" />
+                                <div class="error-input-container">
+                                    <span class="error-validation"></span>
+                                </div>
+                            </div>
+                            <div class="col-4 input-container pl-0">
+                                <input type="text" class="input-style" placeholder="Apartament" id="apartament" />
+                                <div class="error-input-container">
+                                    <span class="error-validation"></span>
+                                </div>
                             </div>
                         </div>
                     </div>

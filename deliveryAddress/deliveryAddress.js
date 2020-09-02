@@ -7,7 +7,13 @@ $(document).ready(function() {
 
         var inputs = [{
                 id: 'oras',
-                fieldLabel: 'Select a city',
+                fieldLabel: 'Oras',
+                type: 'dropdown',
+                required: true
+            },
+            {
+                id: 'judet',
+                fieldLabel: 'Judet',
                 type: 'dropdown',
                 required: true
             },
@@ -37,8 +43,18 @@ $(document).ready(function() {
                 required: true,
             },
             {
-                id: 'fullAdress',
-                fieldLabel: 'Adresa Completa',
+                id: 'bloc',
+                fieldLabel: 'Bloc',
+                type: 'text'
+            },
+            {
+                id: 'etaj',
+                fieldLabel: 'Etaj',
+                type: 'text'
+            },
+            {
+                id: 'apartament',
+                fieldLabel: 'Apartament',
                 type: 'text'
             },
             {
