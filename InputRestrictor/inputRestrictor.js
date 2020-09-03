@@ -44,6 +44,8 @@ var inputRestrictor = {};
             $(`#${id}`).on('keypress input', function(e) {
                 if (e.which === 13) {
                     $(`#${inputsIds[index+1]}`).focus();
+                    var inputHeight = $(this).offset().top - 10;
+                    $("html, body").animate({ scrollTop: inputHeight }, 600);
                 }
             })
         });
