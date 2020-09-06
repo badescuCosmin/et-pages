@@ -10,7 +10,8 @@
     <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/roboto-fontface@0.10.0/css/roboto/roboto-fontface.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/roboto-fontface@0.10.0/css/roboto/roboto-fontface.min.css">
     <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="../general.css">
@@ -19,7 +20,7 @@
 
 <body class="content">
     <nav class="navbar">
-        <div class="navbar-wrapper container">
+        <div class="navbar-wrapper position-relative container">
             <div class="d-flex align-items-center">
                 <div class="navbar-btn-mobile d-flex d-lg-none mr-3 mr-lg-0 justify-content-center align-items-center flex-column">
                     <span></span>
@@ -29,15 +30,42 @@
             </div>
             <div class="navbar-links d-flex">
                 <ul class="navbar-links-center align-items-center d-none d-lg-flex">
-                    <li class="navbar-link"><a>Toys</a></li>
-                    <li class="navbar-link"><a>Mega Toys</a></li>
-                    <li class="navbar-link"><a href="../orderFinalized/orderFinalized.html">Lego</a></li>
-                    <li class="navbar-link"><a href="../subscriptionConfirmation/subscriptionConfirmation.html">Books</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link navbar-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="d-flex">
+                                <div class="column">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                                <div class="column">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                                <div class="column">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                                <div class="column">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar-link"><a class="btn btn-link" href="../orderFinalized/orderFinalized.html">Lego</a></li>
+                    <li class="navbar-link"><a class="btn btn-link" href="../subscriptionConfirmation/subscriptionConfirmation.html">Books</a></li>
                 </ul>
                 <ul class="navbar-links-left align-items-center d-none d-lg-flex">
-                    <li class="navbar-link active"><a href="../planSteps/plansSteps.html">Plans</a></li>
-                    <li class="navbar-link"><a href='../popupAddName/popupAddName.html'>Sign In</a></li>
-                    <button class="btn-navbar"><a href="../deliveryAddress/deliveryAddress.html">Create account</a></button>
+                    <li class="navbar-link active"><a class="btn btn-link" href="../planSteps/plansSteps.html">Plans</a></li>
+                    <li class="navbar-link"><a class="btn btn-link" href='../popupAddName/popupAddName.html'>Sign In</a></li>
+                    <button type="button" class="btn-navbar"><a class="btn btn-link" href="../deliveryAddress/deliveryAddress.html">Create account</a></button>
                 </ul>
                 <ul class="navbar-links-mobile d-flex d-lg-none">
                     <span><img src="../assets/svg/User.svg" alt="user"></span>
@@ -47,7 +75,20 @@
         </div>
         <div class="navbar-wrapper-mobile">
             <ul class="navbar-mobile d-none">
-                <li class="navbar-link"><a>Toys</a></li>
+                <li class="navbar-link">
+                    <a id='toys'>Toys</a>
+                    <div class="link-menu-toys">
+                        <a class="btn btn-link">item1</a>
+                        <a class="btn btn-link">item1</a>
+                    </div>
+                </li>
+                <li class="navbar-link" id='megaToys'>
+                    <a>Mega TOys</a>
+                    <div class="link-menu-megaToys">
+                        <a class="btn btn-link">item1</a>
+                        <a class="btn btn-link">item1</a>
+                    </div>
+                </li>
                 <li class="navbar-link"><a>Mega Toys</a></li>
                 <li class="navbar-link"><a href="../orderFinalized/orderFinalized.html">Lego</a></li>
                 <li class="navbar-link"><a href="../subscriptionConfirmation/subscriptionConfirmation.html">Books</a></li>
@@ -103,7 +144,8 @@
                                             <img src="../assets/svg/Schimb.svg" alt="">
                                         </div>
                                         <div class="text-wrapper">
-                                            <div class="text small-text">Pentru fiecare extra schimb vei achita 29 Ron</div>
+                                            <div class="text small-text">Pentru fiecare extra schimb vei achita 29 Ron
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -162,7 +204,8 @@
                         </div>
                         <div class="btn-wrapper">
                             <div class="btn-mask d-none d-lg-block"></div>
-                            <button  class="button-primary" id='abonament'>Aboneaza-te acum!<span>119.00</span><span>Ron</span></button>
+                            <button type="button" class="btn-primary" id='abonament'>Aboneaza-te
+                                acum!<span>119.00</span><span>Ron</span></button>
                         </div>
                     </div>
                 </div>
@@ -174,7 +217,8 @@
                                     De cate ori pot schimba jucăriile ?
                                 </div>
                                 <div class="text">
-                                    Poti comanda oricand doresti. Din ratiuni logistice, te rugam sa lasi sa treaca cel putin o saptamana intre comenzi.
+                                    Poti comanda oricand doresti. Din ratiuni logistice, te rugam sa lasi sa treaca cel
+                                    putin o saptamana intre comenzi.
                                 </div>
                             </li>
                             <li class="list-group-item item">
@@ -182,7 +226,8 @@
                                     Cum schimb jucariile ?
                                 </div>
                                 <div class="text">
-                                    Foarte simplu, intregistrezi o comanda noua pe platforma Evertoys. Curierul iti aduce cutia noua si o preia pe cea veche.
+                                    Foarte simplu, intregistrezi o comanda noua pe platforma Evertoys. Curierul iti
+                                    aduce cutia noua si o preia pe cea veche.
                                 </div>
                             </li>
                             <li class="list-group-item item">
@@ -190,7 +235,9 @@
                                     Cum igienizam jucăriile ?
                                 </div>
                                 <div class="text">
-                                    Cu multă, multă atenție si seriozitate. Curățarea se face individual în funcție de materialul jucăriei. Unde este cazul spălam piesă cu piesă si tratăm cu bactericide ecologice netoxice și omologate UE.
+                                    Cu multă, multă atenție si seriozitate. Curățarea se face individual în funcție de
+                                    materialul jucăriei. Unde este cazul spălam piesă cu piesă si tratăm cu bactericide
+                                    ecologice netoxice și omologate UE.
                                 </div>
                             </li>
                             <li class="list-group-item item">
@@ -198,7 +245,8 @@
                                     Ce se întâmplă daca se pierd piese sau se strică jucării ?
                                 </div>
                                 <div class="text">
-                                    Nu-ți face griji, nu te penalizăm în nici un fel pentru deteriorări sau piese pierdute.
+                                    Nu-ți face griji, nu te penalizăm în nici un fel pentru deteriorări sau piese
+                                    pierdute.
                                 </div>
                             </li>
                             <li class="list-group-item item">
@@ -217,6 +265,15 @@
     </div>
     <script src="basePlan.js"></script>
     <script src="../GeneralMethods/generalMethods.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
