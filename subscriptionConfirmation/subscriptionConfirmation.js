@@ -2,7 +2,7 @@
 $(document).ready(function() {
     confetti({
         particleCount: 110,
-        origin:{x:.63, y:.6},
+        origin:{x:.5, y:.5},
         startVelocity:35,
         spread:90,
         
