@@ -640,7 +640,7 @@ body {
 }
 @media (resolution: 120dpi) and (min-width: 992px){ 
     .content{
-        zoom:80%;
+        zoom:78%;
     }
 }
 @media (resolution: 144dpi) and (min-width: 992px){ 
