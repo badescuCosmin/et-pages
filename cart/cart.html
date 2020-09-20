@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css"> -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/roboto-fontface@0.10.0/css/roboto/roboto-fontface.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body class="content">
+    <nav class="navbar">
+        <div class="navbar-wrapper container">
+            <div class="d-flex align-items-center">
+                <div
+                    class="navbar-btn-mobile d-flex d-lg-none mr-3 mr-lg-0 justify-content-center align-items-center flex-column">
+                    <span></span>
+                    <span></span>
+                </div>
+                <img class='logo' src="../assets/svg/Logo.png" alt="logo">
+            </div>
+            <div class="navbar-links d-flex">
+                <ul class="navbar-links-center align-items-center d-none d-lg-flex">
+                    <li class="navbar-link"><a>Toys</a></li>
+                    <li class="navbar-link"><a>Mega Toys</a></li>
+                    <li class="navbar-link"><a href="../orderFinalized/orderFinalized.html">Lego</a></li>
+                    <li class="navbar-link"><a href="../subscriptionConfirmation/subscriptionConfirmation.html">Books</a></li>
+                </ul>
+                <ul class="navbar-links-left align-items-center d-none d-lg-flex">
+                    <li class="navbar-link active"><a href="../planSteps/plansSteps.html">Plans</a></li>
+                    <li class="navbar-link"><a href='../popupAddName/popupAddName.html'>Sign In</a></li>
+                    <button type="button" class="btn-navbar"><a href="../deliveryAddress/deliveryAddress.html">Create account</a></button>
+                </ul>
+                <ul class="navbar-links-mobile d-flex d-lg-none">
+                    <span><img src="../assets/svg/User.svg" alt="user"></span>
+                    <span><img src="../assets/svg/Cart.svg" alt="cart"></span>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content container mx-auto position-relative d-none d-lg-block">
+        <div class="cart-wrapper">
+            <div class="cart-header d-flex justify-content-between">
+                <h3 class="cart-title">My Cart</h3>
+                <span class="cart-close">X</span>
+            </div>
+            <div class="cart-scrollable">
+                <div class="category-availability mt-24">
+                    <div class="d-flex justify-content-between">
+                        <div class="category-name">Toys</div>
+                        <div class="category-quantity"><span>2</span>&nbsp;out of 2</div>
+                    </div>
+                </div>
+                <div class="cart-product d-flex">
+                    <div class="cart-product-image">
+                        <img src="../assets/svg/cart-product.jpg" alt="cart-product">
+                    </div>
+                    <div class="cart-product-info">
+                        <h4 class="cart-product-title">Fortrex (70317) - LEGO Nexo Knights</h4>
+                        <span class="cart-product-remove">Remove</span>
+                    </div>
+                </div>
+                <div class="cart-product d-flex">
+                    <div class="cart-product-image">
+                        <img src="../assets/svg/cart-product.jpg" alt="cart-product">
+                    </div>
+                    <div class="cart-product-info">
+                        <h4 class="cart-product-title">Fortrex (70317) - LEGO Nexo Knights</h4>
+                        <span class="cart-product-remove">Remove</span>
+                    </div>
+                </div>
+                <div class="category-availability mt-24">
+                    <div class="d-flex justify-content-between">
+                        <div class="category-name">Mega Toys</div>
+                        <div class="category-quantity"><span>0</span>&nbsp;out of 2</div>
+                    </div>
+                    <div class="dashed-info">
+                        <h3>You can add one Mega Toy to your order.</h3>
+                    </div>
+                </div>
+                <div class="category-availability mt-24">
+                    <div class="d-flex justify-content-between">
+                        <div class="category-name">Books</div>
+                        <div class="category-quantity"><span>2</span>&nbsp;out of 2</div>
+                    </div>
+                </div>
+                <div class="cart-product d-flex">
+                    <div class="cart-product-image">
+                        <img src="../assets/svg/cart-product.jpg" alt="cart-product">
+                    </div>
+                    <div class="cart-product-info">
+                        <h4 class="cart-product-title">Fortrex (70317) - LEGO Nexo Knights</h4>
+                        <span class="cart-product-remove">Remove</span>
+                    </div>
+                </div>
+                <div class="cart-product d-flex">
+                    <div class="cart-product-image">
+                        <img src="../assets/svg/cart-product.jpg" alt="cart-product">
+                    </div>
+                    <div class="cart-product-info">
+                        <h4 class="cart-product-title">Fortrex (70317) - LEGO Nexo Knights</h4>
+                        <span class="cart-product-remove">Remove</span>
+                    </div>
+                </div>
+                <div class="cart-product d-flex">
+                    <div class="cart-product-image">
+                        <img src="../assets/svg/cart-product.jpg" alt="cart-product">
+                    </div>
+                    <div class="cart-product-info">
+                        <h4 class="cart-product-title">Fortrex (70317) - LEGO Nexo Knights</h4>
+                        <span class="cart-product-remove">Remove</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-button">
+                <button type="button" class="btn-primary " id='abonament'>Plaseaza
+                    comanda<span>119.00</span><span>Ron</span></button>
+                <span class="discount-text">Vei plati un extra swap de 28 de lei.</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

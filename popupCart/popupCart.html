@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css"> -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/roboto-fontface@0.10.0/css/roboto/roboto-fontface.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="../cart/cart.css">
+    <link rel="stylesheet" href="./popupCart.css">
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        works in mobile mode
+    </button>
+    <div class="modal fade p-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog main-content" role="document">
+            <div class="modal-content modal-container cart-wrapper">
+                <div class="modal-close cart-header d-flex justify-content-between">
+                    <h3 class="cart-title">My Cart</h3>
+                    <button type="button" class="close cart-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="cart-scrollable">
+                    <div class="category-availability mt-24">
+                        <div class="d-flex justify-content-between">
+                            <div class="category-name">Toys</div>
+                            <div class="category-quantity"><span>2</span>&nbsp;out of 2</div>
+                        </div>
+                    </div>
+                    <div class="cart-product d-flex">
+                        <div class="cart-product-image">
+                            <img src="../assets/svg/cart-product.jpg" alt="cart-product">
+                        </div>
+                        <div class="cart-product-info">
+                            <h4 class="cart-product-title">Fortrex (70317) - LEGO Nexo Knights</h4>
+                            <span class="cart-product-remove">Remove</span>
+                        </div>
+                    </div>
+                    <div class="cart-product d-flex">
+                        <div class="cart-product-image">
+                            <img src="../assets/svg/cart-product.jpg" alt="cart-product">
+                        </div>
+                        <div class="cart-product-info">
+                            <h4 class="cart-product-title">Fortrex (70317) - LEGO Nexo Knights</h4>
+                            <span class="cart-product-remove">Remove</span>
+                        </div>
+                    </div>
+                    <div class="category-availability mt-24">
+                        <div class="d-flex justify-content-between">
+                            <div class="category-name">Mega Toys</div>
+                            <div class="category-quantity"><span>0</span>&nbsp;out of 2</div>
+                        </div>
+                        <div class="dashed-info">
+                            <h3>You can add one Mega Toy to your order.</h3>
+                        </div>
+                    </div>
+                    <div class="category-availability mt-24">
+                        <div class="d-flex justify-content-between">
+                            <div class="category-name">Books</div>
+                            <div class="category-quantity"><span>2</span>&nbsp;out of 2</div>
+                        </div>
+                    </div>
+                    <div class="cart-product d-flex">
+                        <div class="cart-product-image">
+                            <img src="../assets/svg/cart-product.jpg" alt="cart-product">
+                        </div>
+                        <div class="cart-product-info">
+                            <h4 class="cart-product-title">Fortrex (70317) - LEGO Nexo Knights</h4>
+                            <span class="cart-product-remove">Remove</span>
+                        </div>
+                    </div>
+                    <div class="cart-product d-flex">
+                        <div class="cart-product-image">
+                            <img src="../assets/svg/cart-product.jpg" alt="cart-product">
+                        </div>
+                        <div class="cart-product-info">
+                            <h4 class="cart-product-title">Fortrex (70317) - LEGO Nexo Knights</h4>
+                            <span class="cart-product-remove">Remove</span>
+                        </div>
+                    </div>
+                    <div class="cart-product d-flex">
+                        <div class="cart-product-image">
+                            <img src="../assets/svg/cart-product.jpg" alt="cart-product">
+                        </div>
+                        <div class="cart-product-info">
+                            <h4 class="cart-product-title">Fortrex (70317) - LEGO Nexo Knights</h4>
+                            <span class="cart-product-remove">Remove</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-button">
+                    <button type="button" class="btn-primary " id='abonament'>Plaseaza
+                        comanda<span>119.00</span><span>Ron</span></button>
+                    <span class="discount-text">Vei plati un extra swap de 28 de lei.</span>
+                </div>
+            </div>
+        </div>
+        <script src="../InputRestrictor/inputRestrictor.js"></script>
+        <script src="../FormValidator/formValidationObjects.js"></script>
+        <script src="../FormValidator/FormValidator.js"></script>
+        <script src='../GeneralMethods/generalMethods.js'></script>
+        <script src='popupAddName.js'></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

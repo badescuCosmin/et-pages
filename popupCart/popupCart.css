@@ -1,0 +1,26 @@
+.main-content {
+    margin-top: 31px;
+    color: #41436b;
+}
+
+.cart-wrapper {
+    width: 90%;
+    height: calc(100vh - 41px);
+    background-color: #f5fbff;
+    border: 1px solid #cce4ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 2px 55px rgba(22, 59, 157, 0.06);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.cart-wrapper .dashed-info {
+    padding: 10px 15px;
+}
+
+
+.cart-wrapper .cart-button .btn-primary {
+    width: 100%;
+}

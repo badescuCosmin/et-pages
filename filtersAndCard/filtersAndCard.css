@@ -1,0 +1,199 @@
+.main-content {
+    margin-top: 91px;
+}
+.main-content .filters-title-container {
+    color: rgb(65, 67, 107);
+    margin: 0;
+}
+.filters-title-container .filters-title {
+    font-size: var(--font18);
+}
+.items-list .item-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.items-list .item-list {
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-medium);
+}
+
+.item-list .item-title {
+    margin: 0;
+    line-height: 16px;
+    margin-right: 6px;
+    font-size: var(--font14);
+}
+
+.item-list .item-number {
+    background-color: rgb(65, 67, 107);
+    border-radius: 5px;
+    padding: 0px 3px;
+    color: var(--white-color);
+    font-size: var(--font14);
+}
+
+.main-content .filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 38px;
+    color: #000;
+    font-weight: var(--font-medium);
+}
+
+.filters-container .filter {
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    background-color: rgba(203, 227, 255, 0.99);
+    padding: 0 22px 0 15px;
+    margin-bottom: 19px;
+    width: 134px;
+    justify-content: center;
+    /* i dont want fix width */
+}
+.filters-container .filter:not(:last-child) {
+    margin-right: 28px;
+}
+.filters-container .filter .action-sign-plus,
+.filters-container .filter .action-sign-minus {
+    padding-right: 15px;
+    font-size: var(--font18);
+}
+
+.filters-container .filter .age-interval {
+    font-size: var(--font14);
+}
+
+.active {
+    background-color: rgb(1, 191, 83) !important;
+    color: #fff;
+}
+
+.cards-container .row {
+    margin-top: 100px;
+    display: flex;
+}
+
+.cards-container .product-card {
+    background-color: rgba(17, 112, 218, 0.06);
+    width: 260px;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(17, 112, 218, 0.06);
+    margin-right: 17px;
+}
+
+.cards-container .product-card .card-product-header img {
+    width: 100%;
+    height: 260px;
+    border-radius: 8px;
+}
+
+.card-product-body .title {
+    font-size: var(--font16);
+    font-weight: var(--font-medium);
+    color: rgb(45, 73, 123);
+    text-align: left;
+    margin-top: 14px;
+    height: 48px;
+}
+.card-product-body .labels-container {
+    display: flex;
+    margin-top: 14px;
+}
+.card-product-body .labels-container .label {
+    background-color: rgb(172, 188, 254);
+    padding: 5px 16px;
+    border-radius: 8px;
+    font-size: var(--font14);
+    font-weight: var(--font-small-medium);
+    color: rgb(60, 23, 173);
+}
+.card-product-body :not(:last-child) {
+    margin-right: 6px;
+}
+.card-product-footer {
+    margin-top: 8px;
+    height: 40px;
+
+}
+.card-product-footer .likes .img-likes {
+    height: 20px;
+    width: 17px;
+    background-color: gold;
+}
+.card-product-footer .likes .number-likes {
+    color: #42a91d;
+    font-size: var(--font16);
+    font-weight: var(--font-small-medium);
+    margin: 0 13px;
+}
+.card-product-footer .age-interval {
+    color: #4671c6;
+    font-size: var(--font16);
+    font-weight: var(--font-small-medium);
+    border-left: 1px solid rgb(172, 188, 254);
+    padding-left: 13px;
+}
+
+.btn-primary {
+    width: 35%;
+    height: 40px;
+    font-size: var(--font16);
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: space-around;
+    padding: 0 15px;
+}
+
+@media only screen and (max-width: 767px) {
+    .cards-container .product-card {
+        width: 48%;
+        margin-right: 0;
+    }
+    .cards-container .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cards-container .row {
+        margin-top: 30px;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-content .filters-title-container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .main-content .filters-container {
+        justify-content: space-between;
+    }
+    .main-content .filters-container .filter {
+        width: 45%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .card-product-footer .age-interval {
+        font-size:11px;
+        padding-left: 7px;
+    }
+    .card-product-footer .likes .number-likes {
+        font-size:11px;
+        margin: 0 7px;
+    }
+    .btn-primary {
+        width: 30%;
+        display: block !important;
+        height: 30px;
+        border-radius: 8px;
+        
+    }
+}
