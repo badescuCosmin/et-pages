@@ -36,6 +36,7 @@ body {
     margin: 0;
     min-height: 100vh;
     user-select: none;
+
     /* margin-bottom: 100px; */
 }
 
@@ -642,13 +643,11 @@ body {
 @media (resolution: 120dpi) and (min-width: 992px){ 
     .content{
         zoom:78%;
-        background-color: red;
     }
 }
 @media (resolution: 144dpi) and (min-width: 992px){ 
     .content {
        zoom:67%;
-       background-color: blue;
    }
 }
 
