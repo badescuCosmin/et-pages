@@ -194,6 +194,8 @@
         display: block !important;
         height: 30px;
         border-radius: 8px;
-        
+    }
+    .card-product-body .title {
+        font-size: var(--font12);
     }
 }
