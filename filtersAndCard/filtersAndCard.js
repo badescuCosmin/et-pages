@@ -18,11 +18,9 @@ $(document).ready(function () {
             }
         });
     });
-
     $productCard.hover(function(){
         $(this).children('.card-product-footer').children('.btn-primary').toggleClass("d-none");
     });
-
 });
 
 

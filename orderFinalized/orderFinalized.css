@@ -60,7 +60,7 @@
     flex-direction: column;
 }
 .info-container-wrapper .inner-wrapper .details-box .box-title {
-    color:#F8825D;
+    color:var(--lightOrange-color);
 }
 .info-container-wrapper .inner-wrapper .details-box .box-content {
     color:var(--normal-textColor);
