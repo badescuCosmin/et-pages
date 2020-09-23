@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css"> -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/roboto-fontface@0.10.0/css/roboto/roboto-fontface.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="popupFilters.css">
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        works in mobile mode
+    </button>
+    <div class="modal fade p-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog main-content" role="document">
+            <div class="modal-content modal-container filters-wrapper">
+                <div class="modal-close  d-flex justify-content-between">
+                    <h3 class="filters-tile">Apply Filters</h3>
+                    <button type="button" class="close cart-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <h3 class="filters-subtitle">Choose and activate filters </h3>
+                <div class="filters-container">
+                    <label>
+                        <div class="filter-input">
+                            <div class="filter">
+                                <div class="age-interval">Doar in stoc</div>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="filterInput1">
+                        <div class="filter-input">
+                            <input type="checkbox" id="filterInput1" name="scales" >
+                            <div class="filter" id='filter1'>
+                                <i class="fas fa-check d-none"></i>
+                                <div class="age-interval">12-14 ani</div>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="filterInput2">
+                        <div class="filter-input">
+                            <input type="checkbox" id="filterInput2" name="scales" >
+                            <div class="filter" id='filter2'>
+                                <i class="fas fa-check d-none"></i>
+                                <div class="age-interval">12-14 ani</div>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="filterInput3">
+                        <div class="filter-input">
+                            <input type="checkbox" id="filterInput3" name="scales" >
+                            <div class="filter" id='filter3'>
+                                <i class="fas fa-check d-none"></i>
+                                <div class="age-interval">12-14 ani</div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="filters-buttons">
+                    <button type="button" class="btn cancel-button">Cancel</button>
+                    <button type="button" class="btn-primary " id='abonament'>Apply</button>
+                </div>
+            </div>
+        </div>
+        <script src='popupFilters.js'></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

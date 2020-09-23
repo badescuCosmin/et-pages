@@ -1,0 +1,43 @@
+
+
+.filters-tile {
+    color:#1E2843;
+    font-size: var(--font18);
+    font-weight: var(--font-medium);
+    margin: 0;
+
+}
+.filters-subtitle {
+    color:var(--normal-textColor);
+    font-size: var(--font14);
+    margin: 0;
+    font-weight: var(--font-small-medium);
+    margin-top: 8px;
+}
+.btn-primary {
+    height: 44px;
+    width: 40%;
+    margin-right: 0;
+}
+.filters-buttons {
+    display: flex;
+    margin-top: 38px;
+}
+.cancel-button {
+    color:var(--normal-textColor);
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 515px) {
+    
+    .filters-container .filter {
+        margin: 0;
+        margin-bottom: 14px;
+    }
+    .filters-wrapper {
+        width: 90%;
+    }
+ 
+}

@@ -20,38 +20,56 @@
 
 <body class="content">
     <div class="main-content container">
-        <div class="d-flex filters-title-container">
-            <h2 class="filters-title w-100 w-md-50">Figurine si scenarii</h2>
-            <div class="items-list w-100 w-md-50  d-flex">
-                <div class="item-list d-flex">
-                    <h4 class="item-title">Toys</h4>
-                    <span class="item-number">123</span>
+        <div class="filters-title-container">
+            <h5 class="filters-route">jucarii /</h5>
+            <h2 class="filters-title">Figurine si scenarii</h2>
+            <div class="filters-items-container">
+                <div class="items-list d-flex">
+                    <div class="item-list d-flex" id='item1'>
+                        <div class="item-title">Toys <span class="item-number">123</span> </div>
+                    </div>
+                    <div class="item-list d-flex" id='item2'>
+                        <div class="item-title">Mega Toys <span class="item-number">15</span> </div>
+                    </div>
                 </div>
-                <div class="item-list d-flex">
-                    <h4 class="item-title">Mega Toys</h4>
-                    <span class="item-number">15</span>
-                </div>
+                <img src="" alt="" class="filters-items-img d-md-none">
             </div>
         </div>
-        <div class="filters-container">
-            <div class="filter">
-                <div class="age-interval">Doar in stoc</div>
-            </div>
-            <div class="filter" id='filter1'>
-                <span class="action-sign-plus">+</span>
-                <span class="action-sign-minus d-none">-</span>
-                <div class="age-interval">12-14 ani</div>
-            </div>
-            <div class="filter" id='filter2'>
-                <span class="action-sign-plus">+</span>
-                <span class="action-sign-minus d-none">-</span>
-                <div class="age-interval">12-14 ani</div>
-            </div>
-            <div class="filter" id='filter3'>
-                <span class="action-sign-plus">+</span>
-                <span class="action-sign-minus d-none">-</span>
-                <div class="age-interval">12-14 ani</div>
-            </div>
+        <div class="filters-container d-none d-md-block">
+            <label>
+                <div class="filter-input">
+                    <div class="filter">
+                        <div class="age-interval">Doar in stoc</div>
+                    </div>
+                </div>
+            </label>
+            <label for="filterInput1">
+                <div class="filter-input">
+                    <input type="checkbox" id="filterInput1" name="scales">
+                    <div class="filter" id='filter1'>
+                        <i class="fas fa-check d-none"></i>
+                        <div class="age-interval">12-14 ani</div>
+                    </div>
+                </div>
+            </label>
+            <label for="filterInput2">
+                <div class="filter-input">
+                    <input type="checkbox" id="filterInput2" name="scales">
+                    <div class="filter" id='filter2'>
+                        <i class="fas fa-check d-none"></i>
+                        <div class="age-interval">12-14 ani</div>
+                    </div>
+                </div>
+            </label>
+            <label for="filterInput3">
+                <div class="filter-input">
+                    <input type="checkbox" id="filterInput3" name="scales">
+                    <div class="filter" id='filter3'>
+                        <i class="fas fa-check d-none"></i>
+                        <div class="age-interval">12-14 ani</div>
+                    </div>
+                </div>
+            </label>
         </div>
         <div class="cards-container container  ">
             <div class="row">
@@ -60,11 +78,11 @@
                         <img src="../assets/svg/card.jpg" alt="img">
                     </div>
                     <div class="card-product-body">
-                        <h4 class="title">Buburuza stie-tot</h4>
-                        <div class="labels-container  d-none d-sm-flex">
+                        <h4 class="title">Buburuza stie-tot ceva pentru randul 2</h4>
+                        <!-- <div class="labels-container  d-none d-sm-flex">
                             <div class="label">Board Games</div>
                             <div class="label">Cognitiv</div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="card-product-footer d-flex align-items-center">
                         <div class="d-flex ">
@@ -76,7 +94,10 @@
                                 <span class="age-interval">3 - 7 ani</span>
                             </div>
                         </div>
-                        <button class="btn-primary d-none mr-0"><div>+</div> <div class="d-none d-md-block">Add</div></button>
+                        <button class="btn-primary d-none mr-0">
+                            <div>+</div>
+                            <div class="d-none d-md-block">Add</div>
+                        </button>
                     </div>
                 </div>
                 <div class="product-card mb-5 text-center">
@@ -85,10 +106,10 @@
                     </div>
                     <div class="card-product-body">
                         <h4 class="title">Buburuza stie-tot</h4>
-                        <div class="labels-container  d-none d-sm-flex">
+                        <!-- <div class="labels-container  d-none d-sm-flex">
                             <div class="label">Board Games</div>
                             <div class="label">Cognitiv</div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="card-product-footer d-flex align-items-center">
                         <div class="d-flex ">
@@ -100,7 +121,10 @@
                                 <span class="age-interval">3 - 7 ani</span>
                             </div>
                         </div>
-                        <button class="btn-primary d-none mr-0"><div>+</div> <div class="d-none d-md-block">Add</div></button>
+                        <button class="btn-primary d-none mr-0">
+                            <div>+</div>
+                            <div class="d-none d-md-block">Add</div>
+                        </button>
                     </div>
                 </div>
                 <div class="product-card mb-5 text-center">
@@ -109,10 +133,10 @@
                     </div>
                     <div class="card-product-body">
                         <h4 class="title">Buburuza stie-tot</h4>
-                        <div class="labels-container  d-none d-sm-flex">
+                        <!-- <div class="labels-container  d-none d-sm-flex">
                             <div class="label">Board Games</div>
                             <div class="label">Cognitiv</div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="card-product-footer d-flex align-items-center">
                         <div class="d-flex ">
@@ -124,7 +148,10 @@
                                 <span class="age-interval">3 - 7 ani</span>
                             </div>
                         </div>
-                        <button class="btn-primary d-none mr-0"><div>+</div> <div class="d-none d-md-block">Add</div></button>
+                        <button class="btn-primary d-none mr-0">
+                            <div>+</div>
+                            <div class="d-none d-md-block">Add</div>
+                        </button>
                     </div>
                 </div>
                 <div class="product-card mb-5 text-center">
@@ -133,10 +160,10 @@
                     </div>
                     <div class="card-product-body">
                         <h4 class="title">Buburuza stie-tot</h4>
-                        <div class="labels-container  d-none d-sm-flex">
+                        <!-- <div class="labels-container  d-none d-sm-flex">
                             <div class="label">Board Games</div>
                             <div class="label">Cognitiv</div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="card-product-footer d-flex align-items-center">
                         <div class="d-flex ">
@@ -148,7 +175,10 @@
                                 <span class="age-interval">3 - 7 ani</span>
                             </div>
                         </div>
-                        <button class="btn-primary d-none mr-0"><div>+</div> <div class="d-none d-md-block">Add</div></button>
+                        <button class="btn-primary d-none mr-0">
+                            <div>+</div>
+                            <div class="d-none d-md-block">Add</div>
+                        </button>
                     </div>
                 </div>
                 <div class="product-card mb-5 text-center">
@@ -157,10 +187,10 @@
                     </div>
                     <div class="card-product-body">
                         <h4 class="title">Buburuza stie-tot</h4>
-                        <div class="labels-container  d-none d-sm-flex">
+                        <!-- <div class="labels-container  d-none d-sm-flex">
                             <div class="label">Board Games</div>
                             <div class="label">Cognitiv</div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="card-product-footer d-flex align-items-center">
                         <div class="d-flex ">
@@ -172,7 +202,10 @@
                                 <span class="age-interval">3 - 7 ani</span>
                             </div>
                         </div>
-                        <button class="btn-primary d-none mr-0"><div>+</div> <div class="d-none d-md-block">Add</div></button>
+                        <button class="btn-primary d-none mr-0">
+                            <div>+</div>
+                            <div class="d-none d-md-block">Add</div>
+                        </button>
                     </div>
                 </div>
             </div>

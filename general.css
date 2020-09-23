@@ -24,6 +24,7 @@
     --font18: 18px;
     --font20: 20.8px;
     --font24: 24px;
+    --font28: 28px;
     --font36: 36px;
 }
 /* general */
@@ -422,12 +423,19 @@ body {
     z-index: 10;
 }
 .btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:focus{
     outline: 0;
     box-shadow: none;
     background: var(--white-color);
     border: 1px solid var(--primary-color);
     color:var(--primary-color);
+}
+.cancel-button:focus,
+.cancel-button:hover,
+.cancel-button:active {
+    outline: 0;
+    box-shadow: none;
+    border: none;
 }
 .btn-primary span{
     font-weight: var(--font-light);
@@ -506,7 +514,52 @@ body {
       transform: rotate(360deg);
     }
   }
+/* filters general styles */
 
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 18px;
+    color: #000;
+    font-weight: var(--font-small-medium);
+}
+.filters-container .filter {
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    background-color: var(--white-color);
+    color:var(--normal-textColor);
+    width: 105px;
+    height: 36px;
+    border:1px solid rgba(37, 45, 60, 0.3);
+    justify-content: center;
+}
+.filters-container label:not(:last-child) {
+    margin-right: 10px;
+}
+.filters-container .filter .age-interval {
+    font-size: var(--font14);
+}
+.filter-input {
+    display: flex;
+    position: relative;
+}
+input {
+    position: absolute;
+    z-index: -1;
+    outline: none;
+    left: 30px;
+    top:5px;
+}
+.active {
+    background-color: var(--normal-textColor) !important;
+    color: var(--white-color) !important;
+}
+.fa-check {
+    padding-right: 9px;
+    font-size: var(--font12);
+}
   /* cart classes */
 .cart-scrollable {
     overflow: auto;
