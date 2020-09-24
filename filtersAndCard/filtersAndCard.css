@@ -27,6 +27,21 @@
     font-size: var(--font18);
     margin-bottom: 15px;
 }
+input {
+    position: absolute;
+    z-index: -1;
+    outline: none;
+    left: 30px;
+    top:5px;
+}
+.active {
+    background-color: var(--normal-textColor) !important;
+    color: var(--white-color) !important;
+}
+.fa-check {
+    padding-right: 9px;
+    font-size: var(--font12);
+}
 .items-list {
     margin-top: 32px;
     display: flex;
