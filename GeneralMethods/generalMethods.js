@@ -179,11 +179,4 @@ var generalMethods = {};
             this.classList.add("active");
         });
     }
-    generalMethods.toggleMobileNavigationItems = function (item) {
-        if (($(item)).css('display') === 'none') {
-            $(item).show();
-        } else {
-            $(item).hide();
-        };
-    };
 }());
