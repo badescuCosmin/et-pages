@@ -94,6 +94,19 @@
     display: flex;
     margin-top: 14px;
 }
+.card-product-header .card-product-unavailable {
+    background-color: #FFF2F3;
+    color:#D91020;
+    font-size: var(--font16);
+    font-weight: var(--font-light);
+    border-radius: 3px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    height: 24px;
+    width: 40%;
+   
+}
 .card-product-body .labels-container .label {
     background-color: var(--card-bg-color);
     padding: 5px 16px;
@@ -126,6 +139,7 @@
     border-left: 1px solid var(--card-bg-color);
     padding-left: 13px;
 }
+
 .btn-primary {
     width: 35%;
     height: 40px;

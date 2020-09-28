@@ -223,6 +223,46 @@ body {
 .navbar .navbar-wrapper .navbar-links .navbar-links-mobile span:not(:last-child) {
     margin-right: 10px;
 }
+
+.navbar-account {
+    display: flex;
+}
+.navbar-account img {
+    width: 15px;
+    display: block;
+    margin-right: 10px;
+    height: 19px;
+    background-color: green;
+}
+.navbar-account .account-firstName {
+    margin: 0;
+    font-weight: var(--font-medium);
+    font-size: var(--font16);
+}
+.navbar .navbar-links .account-slider {
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    transition-property: margin-right;
+    background-color: aqua;
+    margin-right: -100%;
+    z-index:1;
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: auto;
+}
+.navbar .navbar-links .navbar-links-left .navbar-cart {
+    background-color: red;
+    margin-right: 10px;
+    height: 19px;
+    width: 15px;
+    display: block;
+}
+.account-active {
+    margin-right: 0 !important;
+}
 /* mobile navbar */
 
 .navbar-wrapper-mobile {
@@ -251,7 +291,7 @@ body {
 .navbar-mobile .navbar-link-icon {
    position: absolute;
    right:0;
-   padding:14px;
+   padding:18px;
    top:0;
    color: var(--white-color);
    background-color: #313541;
@@ -726,6 +766,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 1000;
     box-shadow: 0 2px 55px rgba(22, 59, 157, 0.06);
     border-radius: 14px;
     padding: 20px;
@@ -798,13 +839,19 @@ body {
     width: 100px;
     border-radius: 12px;
 }
-.cart-wrapper .cart-button {
+.cart-wrapper .cart-button{
     position: absolute;
     bottom: 20px;
     left:0;
     width: 90%;
     left:5%;
 }
+.cart-wrapper .cart-button .btn-primary{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+}
+
 .cart-wrapper .cart-button .discount-text {
     font-size: var(--font14);
     font-weight: var(--font-medium);

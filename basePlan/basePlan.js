@@ -1,10 +1,6 @@
 $(document).ready(function () {
     var $hamburgerBtn = $('.navbar-btn-mobile');
-    var $mobileNavbar = $(".navbar-wrapper-mobile");
-
-    var $navbarMobile = $(".navbar-mobile");
     var $abonament = $("#abonament");
-
     generalMethods.setCheckbox();
     generalMethods.getNavigation();
     generalMethods.setButton();
@@ -14,7 +10,7 @@ $(document).ready(function () {
         $('.navbar-wrapper-mobile').toggleClass('is-visible');
         $('.wrapper').toggleClass('is-visible');
         $('body').toggleClass('overflow-hidden');
-    })
+    });
 
     $('.wrapper').on('click', function(e){
         $('.navbar-wrapper-mobile').toggleClass('is-visible');
@@ -22,9 +18,11 @@ $(document).ready(function () {
         $('body').toggleClass('overflow-hidden');
         e.preventDefault();
         e.stopImmediatePropagation();
-    })
-    
+    });
 
+    $('.navbar-account').on('click', function(){
+        $('.account-slider').toggleClass('account-active')
+    })
 });
 
 
