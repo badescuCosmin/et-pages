@@ -254,10 +254,7 @@ body {
     overflow: auto;
 }
 .navbar .navbar-links .navbar-links-left .navbar-cart {
-    background-color: red;
     margin-right: 10px;
-    height: 19px;
-    width: 15px;
     display: block;
 }
 .account-active {
@@ -570,6 +567,18 @@ body {
    margin-top: -1px;
    box-shadow: 0 2px 12px rgba(17, 112, 218, 0.16);
    border-radius: 0,0,10px,10px;
+}
+.nav-item.dropdown.account-dropdown .dropdown-menu {
+    width: 10%;
+    margin-left: 760px;
+}
+.nav-item.dropdown.account-dropdown .account-dropdown-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item.dropdown.account-dropdown .account-dropdown-info .account-name{
+    margin-left: 8px;
 }
 .nav-item.dropdown .dropdown-menu .dropdown-menu-items-box {
     display: flex;
