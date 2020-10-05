@@ -17,7 +17,7 @@ $(document).ready(function () {
         required: true,
         type: 'text',
         minLength: '3',
-        charactersLength: 8
+        charactersLength: 10
     }];
     $(add_button).click(function (e) {
         e.preventDefault();
@@ -54,7 +54,7 @@ $(document).ready(function () {
                 required: true,
                 type: 'text',
                 minLength: '3',
-                charactersLength: 8
+                charactersLength: 10
             });
            
         };
@@ -70,17 +70,9 @@ $(document).ready(function () {
 
     function setInput() {
         if(inputs.length > 2){
-            for(i=0; i< inputs.length/2 -1 ; i++) {
-                inputRestrictor.setInputOnlyWithDigits(`birthday${x}`);
-                inputRestrictor.setInputWithExactCharactersLength(`birthday${x}`, 8);
-                inputRestrictor.putCharacterAfterNumberOfCharacters(`birthday${x}`, "/", 2);
-                inputRestrictor.setDate(`birthday${x}`); 
-            }
+            
         }
-        inputRestrictor.setInputOnlyWithDigits("birthday");
-        inputRestrictor.setInputWithExactCharactersLength("birthday", 8);
-        inputRestrictor.putCharacterAfterNumberOfCharacters("birthday", "/", 2);
-        inputRestrictor.setDate("birthday");
+     
         // step1 inputs
         var inputsValidator = new FormValidator({ inputsList: inputs });
 
