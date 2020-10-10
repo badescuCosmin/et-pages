@@ -1010,7 +1010,7 @@ body {
     .info-container-wrapper .inner-wrapper {
         width: 100%;
     }
-    
+}    
 @media only screen and (max-width: 400px) {
     .btn-primary {
         width: 90%;
