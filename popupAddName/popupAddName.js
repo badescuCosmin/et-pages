@@ -70,9 +70,17 @@ $(document).ready(function () {
 
     function setInput() {
         if(inputs.length > 2){
-            
+            for(i=0; i< inputs.length/2 -1 ; i++) {
+                inputRestrictor.setInputOnlyWithDigits(`birthday${x}`);
+                inputRestrictor.setInputWithExactCharactersLength(`birthday${x}`, 10);
+                inputRestrictor.putCharacterAfterNumberOfCharacters(`birthday${x}`, "/", 2);
+                inputRestrictor.setDate(`birthday${x}`); 
+            }
         }
-     
+        inputRestrictor.setInputOnlyWithDigits("birthday");
+        inputRestrictor.setInputWithExactCharactersLength("birthday", 10);
+        inputRestrictor.putCharacterAfterNumberOfCharacters("birthday", "/", 2);
+        inputRestrictor.setDate("birthday");
         // step1 inputs
         var inputsValidator = new FormValidator({ inputsList: inputs });
 
