@@ -23,6 +23,7 @@ var boxMainContainer = "box-main-container";
 var errorInputContainer = "error-input-container";
 var errorValidation = "error-validation";
 var errorBorder = "error-border";
+var errorBorderBirthday = 'error-border-birthday'
 var validationMesages = {}
 
 validationMesages.getRequiredErrorMessage = function(field) {
