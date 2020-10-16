@@ -52,8 +52,15 @@
                                     <span class="error-validation"></span>
                                 </div>
                             </div>
-                            <div class="input-container">
-                                <input type="tel" class="input-style" placeholder="Birthday (DD/MM/YY)" id="birthday" />
+                            <div class="input-container d-flex">
+                                <div class="d-flex align-items-center">
+                                    <input  maxlength="2" type="tel" class="input-style noBorders" placeholder="DD" id="birthday-day" />/
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <input maxlength="2" type="tel" class="input-style noBorders" placeholder="MM" id="birthday-mounth" />/
+                                </div>
+                               
+                                <input  maxlength="4" type="tel" class="input-style noBorders" placeholder="YYYY" id="birthday-year" />
                                 <div class="error-input-container">
                                     <span class="error-validation"></span>
                                 </div>

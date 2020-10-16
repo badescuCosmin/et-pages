@@ -19,6 +19,27 @@ $(document).ready(function () {
         minLength: '3',
         charactersLength: 10
     }];
+
+    $('#birthday-day').on('keyup', function(){
+        if(this.value.length === 2){
+            document.getElementById("birthday-mounth").focus();
+        }
+    })
+    $('#birthday-mounth').on('keyup', function(e){
+        if(this.value.length ===  2){
+            document.getElementById("birthday-year").focus();
+        }
+        if(e.keyCode === 8){
+           if(!this.value.length){
+            document.getElementById("birthday-day").focus();  
+           }
+        }
+    })
+    $('#birthday-year').on('keyup', function(){
+        if(this.value.length  === 4){
+            document.getElementById("btn-cta").focus();
+        }
+    })
     $(add_button).click(function (e) {
         e.preventDefault();
         if (x < max_fields) {
@@ -73,6 +94,7 @@ $(document).ready(function () {
         var inputsValidator = new FormValidator({ inputsList: inputs });
 
         $("#btn-cta").on("click", function () {
+
             generalMethods.goNextStep(inputsValidator);
         });
     };
@@ -110,4 +132,7 @@ $(document).ready(function () {
         });
         this.value = output.join('').substr(0, 14);
     });
+
+    
 });
+
