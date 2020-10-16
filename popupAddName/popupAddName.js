@@ -24,9 +24,15 @@ $(document).ready(function () {
         if(this.value.length === 2){
             document.getElementById("birthday-mounth").focus();
         }
+        if(this.value > 31){
+            this.value = '01'
+        }
     })
     $('#birthday-mounth').on('keyup', function(e){
         if(this.value.length ===  2){
+            if(this.value > 12){
+                this.value = '01'
+            }
             document.getElementById("birthday-year").focus();
         }
         if(e.keyCode === 8){
@@ -35,10 +41,15 @@ $(document).ready(function () {
            }
         }
     })
-    $('#birthday-year').on('keyup', function(){
+    $('#birthday-year').on('keyup', function(e){
         if(this.value.length  === 4){
             document.getElementById("btn-cta").focus();
         }
+        if(e.keyCode === 8){
+            if(!this.value.length){
+             document.getElementById("birthday-mounth").focus();  
+            }
+         }
     })
     $(add_button).click(function (e) {
         e.preventDefault();
