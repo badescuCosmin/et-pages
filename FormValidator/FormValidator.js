@@ -224,17 +224,33 @@ var FormValidator = (function() {
 
     //ADD THE ERROR MESSAGE ON UI
     function _setInputValidation(input, $parentContainer) {
-        var errorMessage = "";
-        if (input.ErrorMessages.length > 0) {
-            errorMessage = input.ErrorMessages[0];
-            $(`.${errorValidation}`, $parentContainer).text(errorMessage);
-            $(`#${input.id}`).addClass(errorBorder);
-            input.isValid = false;
+        console.error(input,'xx')
+        if(input.fieldLabel.includes('Birthday')){
+            var errorMessage = "";
+            if (input.ErrorMessages.length > 0) {
+                errorMessage = input.ErrorMessages[0];
+                $(`.${errorValidation}`, $parentContainer).text(errorMessage);
+                $(`#${input.id}`).addClass(errorBorderBirthday);
+                input.isValid = false;
+            } else {
+                $(`.${errorValidation}`, $parentContainer).text(errorMessage);
+                $(`#${input.id}`).removeClass(errorBorderBirthday);
+                input.isValid = true;
+            }
         } else {
-            $(`.${errorValidation}`, $parentContainer).text(errorMessage);
-            $(`#${input.id}`).removeClass(errorBorder);
-            input.isValid = true;
+            var errorMessage = "";
+            if (input.ErrorMessages.length > 0) {
+                errorMessage = input.ErrorMessages[0];
+                $(`.${errorValidation}`, $parentContainer).text(errorMessage);
+                $(`#${input.id}`).addClass(errorBorder);
+                input.isValid = false;
+            } else {
+                $(`.${errorValidation}`, $parentContainer).text(errorMessage);
+                $(`#${input.id}`).removeClass(errorBorder);
+                input.isValid = true;
+            }
         }
+        
     }
 
     function _getAllowedCharactersValidation(input, value) {
