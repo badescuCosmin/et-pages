@@ -1,7 +1,7 @@
 
 /* content grid styles responsive */
 .main-content {
-    padding-top: 150px;
+    padding-top: 125px;
 }
 .main-content .main-content-title {
     color: var(--red-color);
@@ -27,7 +27,7 @@
     margin-bottom: 30px;
 }
 .subscription-container .subscription-details .headers-container {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 /* subscription list */
