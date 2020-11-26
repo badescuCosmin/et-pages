@@ -126,4 +126,7 @@
     .main-content {
         margin-top: 100px;
     }
+    .subscription-boxes .sub-text {
+        display: none;
+    }
 }

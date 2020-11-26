@@ -1050,6 +1050,13 @@ body {
     .info-container-wrapper .inner-wrapper {
         width: 100%;
     }
+    .item-box-container  {
+      display: flex;
+      align-items: center;
+    }
+    .item-box-container .checkbox-wrapper {
+       margin-top: 0;
+    }
 }    
 @media only screen and (max-width: 400px) {
     .btn-primary {
