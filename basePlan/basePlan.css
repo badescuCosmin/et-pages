@@ -1,7 +1,7 @@
 
 /* content grid styles responsive */
 .main-content {
-    margin-top: 150px;
+    padding-top: 150px;
 }
 .main-content .main-content-title {
     color: var(--red-color);
@@ -42,6 +42,12 @@
     padding: 5px 0;
     padding-right: 11px;
     color: #00BE52;
+}
+/* fixeaza "pentru fiecare schimb vei achita 29 ron" pe un singur rand */
+.subscription-container .list-group-item.change-container {
+   padding: 0;
+   align-items: center;
+   margin-top: 18px;
 }
 .subscription-container .list-group-item .text-wrapper {
     line-height: 32px;
