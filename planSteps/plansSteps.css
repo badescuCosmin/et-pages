@@ -256,6 +256,14 @@
 .d-none-custom {
     display: none;
 }
+.discount-code {
+    text-decoration: underline;
+    color:var(--primary-color);
+    cursor: pointer;
+}
+.show {
+    display: block !important;
+}
 /* media queris */
 
 @media only screen and (max-width: 992px) {

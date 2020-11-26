@@ -122,4 +122,8 @@ $(document).ready(function() {
         })
     }
     setInput()
+
+    $("#discount-code").on('click', function(){
+        $('.dotted-input-container').addClass('show')
+    })
 })
