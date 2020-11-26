@@ -224,8 +224,8 @@ var FormValidator = (function() {
 
     //ADD THE ERROR MESSAGE ON UI
     function _setInputValidation(input, $parentContainer) {
-        console.error(input,'xx')
-        if(input.fieldLabel.includes('Birthday')){
+        
+        if(input.fieldLabel && input.fieldLabel.includes('Birthday')){
             var errorMessage = "";
             if (input.ErrorMessages.length > 0) {
                 errorMessage = input.ErrorMessages[0];

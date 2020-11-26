@@ -415,6 +415,7 @@ body {
     -moz-box-shadow: 0px 2px 10px 0px rgba(22, 59, 157, 0.1);
     box-shadow: 0px 2px 10px 0px rgba(22, 59, 157, 0.1);
 }
+
 .item-box-container:not(:last-child) {
     margin-bottom: 12px;
 }
@@ -1047,6 +1048,16 @@ body {
       --font36:28px;
       --font20:16px;
     }
+    .item-box-container {
+        padding: 10px 7px 10px 7px;
+    }
+    .item-box-container .text-container {
+        padding:1px 2px 1px 5px;
+    }
+    .item-box-container .text-container .sub-text{
+        font-size: var(--font12);
+    }
+
     .info-container-wrapper .inner-wrapper {
         width: 100%;
     }
@@ -1060,6 +1071,7 @@ body {
     .btn-wrapper {
         display: none;
     }
+   
 }    
 @media only screen and (max-width: 400px) {
     .btn-primary {
@@ -1070,9 +1082,6 @@ body {
     .item-box-container {
         border-radius: 12px;
         padding: 5px 8px;
-    }
-    .item-box-container .text-container {
-        padding:1px 2px 1px 5px;
     }
 }
 @media (resolution: 120dpi) and (min-width: 992px){ 
