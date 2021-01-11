@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css"> -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/roboto-fontface@0.10.0/css/roboto/roboto-fontface.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="productPage.css">
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="../homepage/homepage.css">
+    <link rel="stylesheet" href="../filtersAndCard/filtersAndCard.css">
+</head>
+
+<body class="content">
+    <div class="container">
+        <div class="route">
+            <span>jucarii / Jocuri si Jucarii Educative</span>
+        </div>
+        <div class="product-container d-flex">
+            <div class="container product-leftContainer p-0 pr-3">
+                <div id="custCarousel" class="carousel" data-ride="carousel" align="right">
+                    <!-- slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"> <img src="https://source.unsplash.com/random/350*300"
+                                alt="Hills"> </div>
+                        <div class="carousel-item"> <img src="https://source.unsplash.com/random/351*300" alt="Hills">
+                        </div>
+                        <div class="carousel-item"> <img src="https://source.unsplash.com/random/352*300" alt="Hills">
+                        </div>
+                        <div class="carousel-item"> <img src="https://source.unsplash.com/random/353*300" alt="Hills">
+                        </div>
+                        <ol class="carousel-indicators ">
+                            <li class="first list-inline-item active"> <a id="carousel-selector-0" class="selected"
+                                    data-slide-to="0" data-target="#custCarousel"> <img
+                                        src="https://source.unsplash.com/random/350*300" class="img-fluid"> </a>
+                            </li>
+                            <li class="second list-inline-item "> <a id="carousel-selector-1" data-slide-to="1"
+                                    data-target="#custCarousel"> <img src="https://source.unsplash.com/random/351*300"
+                                        class="img-fluid"> </a>
+                            </li>
+                            <li class="third list-inline-item"> <a id="carousel-selector-2" data-slide-to="2"
+                                    data-target="#custCarousel"> <img src="https://source.unsplash.com/random/352*300"
+                                        class="img-fluid"> </a>
+                            </li>
+                            <li class="fourth list-inline-item"> <a id="carousel-selector-2" data-slide-to="3"
+                                    data-target="#custCarousel"> <img src="https://source.unsplash.com/random/353*300"
+                                        class="img-fluid"> </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <h3 class="title">Set STEM robotică – Roboţelul Botley</h3>
+                <div class="product-recommendation">
+                    <img src="../assets/svg/Rating.svg">
+                    <span class="number-ratings">2</span>
+                    <span class="separator">|</span>
+                    <span class="age-recommendation">4 - 16 ani</span>
+                    <img src="../assets/svg/product-recommendation-logo.png">
+                    <span class="learning-resources">Learning Resources</span>
+                </div>
+                <div class="product-additional-info">
+                    <img src="../assets/svg/checkmark.svg">
+                    <span>Inclus in abonamentul evertoys</span>
+                </div>
+                <div class="price">
+                    <span class="label">Preţ de retail</span>
+                    <span class="value">459.00 lei</span>
+                </div>
+                <div class="discount-code">
+                    <span class="label">
+                        Cod:
+                    </span>
+                    <span class="value">
+                        FD82640
+                    </span>
+                </div>
+                <div class="product-availability">
+                    <span>In stoc</span>
+                </div>
+                <div class="product-shipping">
+                    <span>Livrare in 1-3 zile</span>
+                </div>
+                <div class="product-not-recommended d-flex">
+                    <img src="../assets/svg/age.svg" alt="not-recommended">
+                    <div class="info">
+                        <span class="title">Atenție! Interzis copiilor sub 3 ani!</span>
+                        <span class="subtitle">Conține piese detașabile mici și componente ce pot fi periculoase.</span>
+                    </div>
+                </div>
+                <div class="product-cta d-flex">
+                    <button type="button" class="btn-primary">Adauga in cutie</button>
+                    <img src="../assets/svg/heart.svg" alt="add-favorites">
+                </div>
+            </div>
+        </div>
+
+        <div class="container product-details">
+            <ul class="nav nav-tabs">
+                <li> <a data-toggle="tab" href="#home" class="active">Descriere</a></li>
+                <li><a data-toggle="tab" href="#menu1">Specificații</a></li>
+                <li><a data-toggle="tab" href="#menu2">Recenzii</a></li>
+                <li><a data-toggle="tab" href="#menu3">Tips and tricks</a></li>
+                <li><a data-toggle="tab" href="#menu3">Downloads</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active show">
+                    Descopera-l pe cel mai simpatic robotel: Botley! Acest joc este conceput special pentru a veni in
+                    completarea activitatilor scolare si care sa le trezeasca micutilor interesul pentru stiinta,
+                    tehnologie, inginerie si matematica. Copiii il pot programa cu usurinta pe Botley sa faca peste 80
+                    de actiuni! Atunci cand o secventa a fost programta trebuie doar sa apesi pe „transmit” si asteptati
+                    ca Botley sa prinda viata si sa execute mişcările programate de voi.
+                    <br>
+                    Seturile STEM se bazeaza pe programa scolara STEM (science, technology, engineering and mathematics)
+                    in care copiii invata la o singura materie stiinta, tehnologie, inginerie si matematica. Aceasta
+                    paradigma se bazeaza pe experimente cu elemente din viata de zi cu zi care sa ii ajute pe cei mici
+                    sa inteleaga cu usurinta diferite fenomene si concepte cu noul lor prieten, cei mici vor invata
+                    notiuni primare de logica si codificare contribuie la dezvoltarea gandirii analitice si critice, la
+                    rezolvarea de probleme, la dezvoltarea spiritului de echipa si a comunicarii si la imbunatatirea
+                    vederii spatiale.
+                    <br>
+                    Atentie! Contraindicat copiilor mai mici de 3 ani. Jucaria/produsul poate contine piese mici care se
+                    pot inghiti sau inhala existand pericolul de sufocare sau nu este potrivita copiilor mai mici de 3
+                    ani. Nu lasati ambalajele jucariilor/produselor la indemana copiilor. Indepartati orice ambalaj al
+                    jucariei/produsului inainte de a da jucaria/produsul copilului. Va rugam sa supravegheati copilul in
+                    timp ce se joaca/foloseste acest produs. Pastrati instructiunile si etichetele pentru referinte
+                    viitoare. Pastrati jucaria/produsul departe de foc, feriti jucaria/produsul de temperaturi ridicate
+                    si umiditate.
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam.</p>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-four container">
+            <div class="header d-flex justify-content-between align-items-center">
+                <h2 class="title header-homepage m-0">Jucării Recomandate</h2>
+                <div class="navigation-buttons d-flex align-items-center">
+                    <div class="arrows">
+                        <img src="../assets/svg/MobileFilter.svg" alt="" class="filters-homepage-img d-md-none">
+                        <img src="../assets/svg/arrow left.svg" alt="arrow-left">
+                        <img src="../assets/svg/arrow right.svg" alt="arrow-right">
+                    </div>
+                </div>
+            </div>
+            <div class="cards-container container">
+                <div class="row mt-0 justify-content-between">
+                    <div class="product-card mr-0 mb-5 text-center">
+                        <div class="card-product-header position-relative">
+                            <img src="../assets/svg/card.jpg" alt="img">
+                            <img src="../assets/svg/Mega.svg" class="card-product-megaToy"></img>
+                            <div class="card-product-unavailable">Indisponibil</div>
+                        </div>
+                        <div class="card-product-body">
+                            <h4 class="title">Buburuza stie-tot ceva pentru randul 2</h4>
+                        </div>
+                        <div class="card-product-footer d-flex align-items-center">
+                            <div class="d-flex ">
+                                <div class="likes d-flex align-items-center">
+                                    <img src="../assets/svg/Rating.svg" alt="rating">
+                                    <div class="number-likes">2</div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="age-interval">3 - 7 ani</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card mr-0 mb-5 text-center">
+                        <div class="card-product-header">
+                            <img src="../assets/svg/card.jpg" alt="img">
+                        </div>
+                        <div class="card-product-body">
+                            <h4 class="title">Buburuza stie-tot</h4>
+                        </div>
+                        <div class="card-product-footer d-flex align-items-center">
+                            <div class="d-flex ">
+                                <div class="likes d-flex align-items-center">
+                                    <img src="../assets/svg/Rating.svg" alt="rating">
+                                    <div class="number-likes">2</div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="age-interval">3 - 7 ani</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card mr-0 mb-5 text-center">
+                        <div class="card-product-header">
+                            <img src="../assets/svg/card.jpg" alt="img">
+                        </div>
+                        <div class="card-product-body">
+                            <h4 class="title">Buburuza stie-tot</h4>
+                        </div>
+                        <div class="card-product-footer d-flex align-items-center">
+                            <div class="d-flex ">
+                                <div class="likes d-flex align-items-center">
+                                    <img src="../assets/svg/Rating.svg" alt="rating">
+                                    <div class="number-likes">2</div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="age-interval">3 - 7 ani</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card mr-0 mb-5 text-center">
+                        <div class="card-product-header">
+                            <img src="../assets/svg/card.jpg" alt="img">
+                        </div>
+                        <div class="card-product-body">
+                            <h4 class="title">Buburuza stie-tot</h4>
+                        </div>
+                        <div class="card-product-footer d-flex align-items-center">
+                            <div class="d-flex ">
+                                <div class="likes d-flex align-items-center">
+                                    <img src="../assets/svg/Rating.svg" alt="rating">
+                                    <div class="number-likes">2</div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="age-interval">3 - 7 ani</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
