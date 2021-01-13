@@ -544,6 +544,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .warning-message span {
+     font-size: 14px;
+    }
     .info-content {
         margin-top: 16px;
     }
