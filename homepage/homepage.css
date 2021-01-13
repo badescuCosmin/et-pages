@@ -51,11 +51,21 @@
    margin-bottom: 30px;
 }
 
+.info-content .details .inner-text-container .first-row.second-state{
+    font-size: 27px;
+    margin-bottom: 25px;
+ }
+
 .info-content .details .inner-text-container .second-row{
     font-size: 60px;
     color:#17194C;
     font-weight: var(--font-bold);
 }
+
+.info-content .details .inner-text-container .second-row.second-state{
+    font-size: 50px;
+}
+ 
  
 .info-content .details .inner-text-container .second-row .one{
     color:#044A6C;
@@ -98,6 +108,19 @@
     color:#252D3C;
     font-weight: var(--font-medium);
     margin-top: 21px;
+}
+
+.info-content .details .inner-text-container .third-row.second-state{
+    font-size: 42px;
+    font-weight: var(--font-small-medium);
+    line-height: 60px;
+    margin-top: 7px;
+    margin-bottom: -5px;
+}
+
+.info-content .details .inner-text-container .third-row.second-state span{
+    color:#287CE4;
+    font-weight: var(--font-bold);
 }
 
 .info-content .photo {
@@ -367,6 +390,16 @@
     .info-content .details .inner-text-container .third-row{
         font-size: 22px;
     }
+    .info-content .details .inner-text-container .first-row.second-state{
+        font-size: 24px;
+    }
+    .info-content .details .inner-text-container .second-row.second-state{
+        font-size: 40px;
+    }
+    .info-content .details .inner-text-container .third-row.second-state{
+        font-size: 30px;
+        line-height: 38px;
+    }
     .footer-details p {
         font-size: 15px;
     }
@@ -409,6 +442,9 @@
     }
     .footer-details .btn-primary {
         width: 50%;
+    }
+    .footer-details .btn-primary.second-state{
+       margin-bottom: 20px;
     }
     .info-content .details .inner-text-container .first-row{
         font-size: 25px;
@@ -518,11 +554,24 @@
         font-size: 16px;
         margin-bottom: 12px;
     }
+    .info-content .details .inner-text-container .first-row.second-state{
+        font-weight: var(--font-medium);
+        font-size: 20px;
+        margin-bottom: 12px;
+        color: #252D3C;
+    }
     .info-content .details .inner-text-container .second-row{
         font-size: 40px;
     }
+    .info-content .details .inner-text-container .second-row.second-state{
+        font-size:32px;
+     }
     .info-content .details .inner-text-container .third-row{
         font-size: 20px;
+    }
+    .info-content .details .inner-text-container .third-row.second-state{
+        font-size: 28px;
+        line-height: 38px;
     }
     .footer-details p {
         font-size: 16px;
