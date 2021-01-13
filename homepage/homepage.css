@@ -454,6 +454,7 @@
     }
     .info-content .details .inner-text-container .third-row{
         font-size: 25px;
+        padding: 0 10px;
     }
     .footer-details p {
         font-size: 18px;
