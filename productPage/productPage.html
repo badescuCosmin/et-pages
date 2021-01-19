@@ -21,12 +21,46 @@
 </head>
 
 <body class="content">
+    <nav class="navbar">
+        <div class="navbar-wrapper container">
+            <div class="d-flex align-items-center">
+                <div
+                    class="navbar-btn-mobile d-flex d-lg-none mr-3 mr-lg-0 justify-content-center align-items-center flex-column">
+                    <span></span>
+                    <span></span>
+                </div>
+                <img class="logo" src="../assets/svg/Logo.png" alt="logo">
+            </div>
+            <div class="navbar-links d-flex">
+                <ul class="navbar-links-center align-items-center d-none d-lg-flex">
+                    <li class="navbar-link"><a class="btn btn-link">Toys</a></li>
+                    <li class="navbar-link"><a class="btn btn-link">Mega Toys</a></li>
+                    <li class="navbar-link"><a class="btn btn-link"
+                            href="../orderFinalized/orderFinalized.html">Lego</a></li>
+                    <li class="navbar-link"><a class="btn btn-link"
+                            href="../subscriptionConfirmation/subscriptionConfirmation.html">Books</a></li>
+                </ul>
+                <ul class="navbar-links-left align-items-center d-none d-lg-flex">
+                    <li class="navbar-link active"><a class="btn btn-link" href="../planSteps/plansSteps.html">Plans</a>
+                    </li>
+                    <li class="navbar-link"><a class="btn btn-link" href='../popupAddName/popupAddName.html'>Sign In</a>
+                    </li>
+                    <button type="button" class="btn-navbar"><a class="btn btn-link"
+                            href="../deliveryAddress/deliveryAddress.html">Create account</a></button>
+                </ul>
+                <ul class="navbar-links-mobile d-flex d-lg-none">
+                    <span><img src="../assets/svg/User.svg" alt="user"></span>
+                    <span><img src="../assets/svg/Cart.svg" alt="cart"></span>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="route">
             <span>jucarii / Jocuri si Jucarii Educative</span>
         </div>
-        <div class="product-container d-flex">
-            <div class="container product-leftContainer p-0 pr-3">
+        <div class="product-container d-block d-lg-flex">
+            <div class="container product-leftContainer p-0 pr-lg-3 mx-auto mx-lg-0">
                 <div id="custCarousel" class="carousel" data-ride="carousel" align="right">
                     <!-- slides -->
                     <div class="carousel-inner">
@@ -152,17 +186,26 @@
                 </div>
             </div>
         </div>
-        <div class="section-four container">
+        <div class="section-four container position-relative">
             <div class="header d-flex justify-content-between align-items-center">
-                <h2 class="title header-homepage m-0">Jucării Recomandate</h2>
+                <h2 class="title header-homepage ml-0">Jucării Recomandate</h2>
+            </div>
+            <div class="filters d-flex justify-content-between align-items-center">
+                <!-- acest span e folosit pentru a pastra stilurile anteriroare copy-paste -->
+               <span>&nbsp;</span>
+                <!-- sagetile pentru slider -->
                 <div class="navigation-buttons d-flex align-items-center">
+                 <span>&nbsp;</span>
                     <div class="arrows">
-                        <img src="../assets/svg/MobileFilter.svg" alt="" class="filters-homepage-img d-md-none">
                         <img src="../assets/svg/arrow left.svg" alt="arrow-left">
                         <img src="../assets/svg/arrow right.svg" alt="arrow-right">
                     </div>
                 </div>
+                <!--  -->
             </div>
+            <!--  -->
+            <!-- aici sunt 4 carduri copiate si ele din filtersAndCard // diferentele de design, 
+                sunt date de faptul ca eu am un cod de css mai vechi, daca importi codul tau o sa arate ca in design  -->
             <div class="cards-container container">
                 <div class="row mt-0 justify-content-between">
                     <div class="product-card mr-0 mb-5 text-center">
@@ -184,6 +227,10 @@
                                     <span class="age-interval">3 - 7 ani</span>
                                 </div>
                             </div>
+                            <button class="btn-primary d-none mr-0">
+                                <div>+</div>
+                                <div class="d-none d-md-block">Add</div>
+                            </button>
                         </div>
                     </div>
                     <div class="product-card mr-0 mb-5 text-center">
@@ -203,6 +250,10 @@
                                     <span class="age-interval">3 - 7 ani</span>
                                 </div>
                             </div>
+                            <button class="btn-primary d-none mr-0">
+                                <div>+</div>
+                                <div class="d-none d-md-block">Add</div>
+                            </button>
                         </div>
                     </div>
                     <div class="product-card mr-0 mb-5 text-center">
@@ -222,6 +273,10 @@
                                     <span class="age-interval">3 - 7 ani</span>
                                 </div>
                             </div>
+                            <button class="btn-primary d-none mr-0">
+                                <div>+</div>
+                                <div class="d-none d-md-block">Add</div>
+                            </button>
                         </div>
                     </div>
                     <div class="product-card mr-0 mb-5 text-center">
@@ -241,11 +296,17 @@
                                     <span class="age-interval">3 - 7 ani</span>
                                 </div>
                             </div>
+                            <button class="btn-primary d-none mr-0">
+                                <div>+</div>
+                                <div class="d-none d-md-block">Add</div>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--  -->
         </div>
+        <script src="../filtersAndCard/filtersAndCard.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
