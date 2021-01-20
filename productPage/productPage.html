@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="../homepage/homepage.css">
     <link rel="stylesheet" href="../filtersAndCard/filtersAndCard.css">
 </head>
-
-<body class="content">
+<body class="content position-relative">
     <nav class="navbar">
         <div class="navbar-wrapper container">
             <div class="d-flex align-items-center">
@@ -35,18 +34,13 @@
                 <ul class="navbar-links-center align-items-center d-none d-lg-flex">
                     <li class="navbar-link"><a class="btn btn-link">Toys</a></li>
                     <li class="navbar-link"><a class="btn btn-link">Mega Toys</a></li>
-                    <li class="navbar-link"><a class="btn btn-link"
-                            href="../orderFinalized/orderFinalized.html">Lego</a></li>
-                    <li class="navbar-link"><a class="btn btn-link"
-                            href="../subscriptionConfirmation/subscriptionConfirmation.html">Books</a></li>
+                    <li class="navbar-link"><a class="btn btn-link" href="../orderFinalized/orderFinalized.html">Lego</a></li>
+                    <li class="navbar-link"><a class="btn btn-link" href="../subscriptionConfirmation/subscriptionConfirmation.html">Books</a></li>
                 </ul>
                 <ul class="navbar-links-left align-items-center d-none d-lg-flex">
-                    <li class="navbar-link active"><a class="btn btn-link" href="../planSteps/plansSteps.html">Plans</a>
-                    </li>
-                    <li class="navbar-link"><a class="btn btn-link" href='../popupAddName/popupAddName.html'>Sign In</a>
-                    </li>
-                    <button type="button" class="btn-navbar"><a class="btn btn-link"
-                            href="../deliveryAddress/deliveryAddress.html">Create account</a></button>
+                    <li class="navbar-link active"><a class="btn btn-link" href="../planSteps/plansSteps.html">Plans</a></li>
+                    <li class="navbar-link"><a class="btn btn-link" href='../popupAddName/popupAddName.html'>Sign In</a></li>
+                    <button type="button" class="btn-navbar"><a class="btn btn-link" href="../deliveryAddress/deliveryAddress.html">Create account</a></button>
                 </ul>
                 <ul class="navbar-links-mobile d-flex d-lg-none">
                     <span><img src="../assets/svg/User.svg" alt="user"></span>
@@ -56,55 +50,76 @@
         </div>
     </nav>
     <div class="container">
-        <div class="route">
+        <div class="route d-none d-sm-block">
             <span>jucarii / Jocuri si Jucarii Educative</span>
         </div>
+        <!-- first section -->
         <div class="product-container d-block d-lg-flex">
             <div class="container product-leftContainer p-0 pr-lg-3 mx-auto mx-lg-0">
-                <div id="custCarousel" class="carousel" data-ride="carousel" align="right">
-                    <!-- slides -->
+                <!-- carousel for tablet and desktop -->
+                <div id="custCarousel" class="carousel d-none d-sm-block" data-ride="carousel" align="right">
                     <div class="carousel-inner">
-                        <div class="carousel-item active"> <img src="https://source.unsplash.com/random/350*300"
-                                alt="Hills"> </div>
-                        <div class="carousel-item"> <img src="https://source.unsplash.com/random/351*300" alt="Hills">
-                        </div>
-                        <div class="carousel-item"> <img src="https://source.unsplash.com/random/352*300" alt="Hills">
-                        </div>
-                        <div class="carousel-item"> <img src="https://source.unsplash.com/random/353*300" alt="Hills">
-                        </div>
+                        <div class="carousel-item active"> <img src="https://source.unsplash.com/random/350*300" alt="Hills"> </div>
+                        <div class="carousel-item"> <img src="https://source.unsplash.com/random/351*300" alt="Hills"></div>
+                        <div class="carousel-item"> <img src="https://source.unsplash.com/random/352*300" alt="Hills"></div>
+                        <div class="carousel-item"> <img src="https://source.unsplash.com/random/353*300" alt="Hills"></div>
                         <ol class="carousel-indicators ">
-                            <li class="first list-inline-item active"> <a id="carousel-selector-0" class="selected"
-                                    data-slide-to="0" data-target="#custCarousel"> <img
-                                        src="https://source.unsplash.com/random/350*300" class="img-fluid"> </a>
-                            </li>
-                            <li class="second list-inline-item "> <a id="carousel-selector-1" data-slide-to="1"
-                                    data-target="#custCarousel"> <img src="https://source.unsplash.com/random/351*300"
-                                        class="img-fluid"> </a>
-                            </li>
-                            <li class="third list-inline-item"> <a id="carousel-selector-2" data-slide-to="2"
-                                    data-target="#custCarousel"> <img src="https://source.unsplash.com/random/352*300"
-                                        class="img-fluid"> </a>
-                            </li>
-                            <li class="fourth list-inline-item"> <a id="carousel-selector-2" data-slide-to="3"
-                                    data-target="#custCarousel"> <img src="https://source.unsplash.com/random/353*300"
-                                        class="img-fluid"> </a>
-                            </li>
+                            <li class="first list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="https://source.unsplash.com/random/350*300" class="img-fluid"></a></li>
+                            <li class="second list-inline-item "> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="https://source.unsplash.com/random/351*300" class="img-fluid"> </a></li>
+                            <li class="third list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="https://source.unsplash.com/random/352*300" class="img-fluid"> </a></li>
+                            <li class="fourth list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="https://source.unsplash.com/random/353*300" class="img-fluid"> </a></li>
                         </ol>
                     </div>
                 </div>
+                <!--  -->
+                <!-- carousel for mobile -->
+                <div class="carousel-holder">
+                    <div id="carouselExampleIndicators" class="carousel slide d-sm-none" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="https://source.unsplash.com/random/351*300" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://source.unsplash.com/random/352*300" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://source.unsplash.com/random/353*300" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!--  -->
             </div>
+            <!-- right content carousel -->
             <div class="product-info">
                 <h3 class="title">Set STEM robotică – Roboţelul Botley</h3>
-                <div class="product-recommendation">
-                    <img src="../assets/svg/Rating.svg">
-                    <span class="number-ratings">2</span>
-                    <span class="separator">|</span>
-                    <span class="age-recommendation">4 - 16 ani</span>
-                    <img src="../assets/svg/product-recommendation-logo.png">
-                    <span class="learning-resources">Learning Resources</span>
+                <div class="product-recommendation d-flex  align-items-center">
+                    <div>
+                        <img src="../assets/svg/Rating.svg">
+                        <span class="number-ratings">2</span>
+                        <span class="separator">|</span>
+                        <span class="age-recommendation">4 - 16 ani</span>
+                    </div>
+                    <div class="second-row">
+                        <img src="../assets/svg/product-recommendation-logo.png">
+                        <span class="learning-resources">Learning Resources</span>
+                    </div>
                 </div>
                 <div class="product-additional-info">
-                    <img src="../assets/svg/checkmark.svg">
+                    <img src="../assets/svg/checkmark.svg" alt="checkmark">
                     <span>Inclus in abonamentul evertoys</span>
                 </div>
                 <div class="price">
@@ -112,12 +127,8 @@
                     <span class="value">459.00 lei</span>
                 </div>
                 <div class="discount-code">
-                    <span class="label">
-                        Cod:
-                    </span>
-                    <span class="value">
-                        FD82640
-                    </span>
+                    <span class="label">Cod: </span>
+                    <span class="value">FD82640</span>
                 </div>
                 <div class="product-availability">
                     <span>In stoc</span>
@@ -132,13 +143,19 @@
                         <span class="subtitle">Conține piese detașabile mici și componente ce pot fi periculoase.</span>
                     </div>
                 </div>
-                <div class="product-cta d-flex">
+                <div class="product-cta d-flex align-items-center">
                     <button type="button" class="btn-primary">Adauga in cutie</button>
-                    <img src="../assets/svg/heart.svg" alt="add-favorites">
+                    <span id='add-favorites' class="add-favorites-btn">
+                        <img src="../assets/svg/heart.svg" alt="add-favorites" class="hide" id="heart">
+                        <img src="../assets/svg/heartfull.svg" alt="add-favorites" class="show" id='fullheart'>
+                    </span>          
                 </div>
             </div>
+            <!--  -->
         </div>
-
+    </div>
+    <!-- details container -->
+    <div class="product-details-holder container">
         <div class="container product-details">
             <ul class="nav nav-tabs">
                 <li> <a data-toggle="tab" href="#home" class="active">Descriere</a></li>
@@ -147,7 +164,6 @@
                 <li><a data-toggle="tab" href="#menu3">Tips and tricks</a></li>
                 <li><a data-toggle="tab" href="#menu3">Downloads</a></li>
             </ul>
-
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active show">
                     Descopera-l pe cel mai simpatic robotel: Botley! Acest joc este conceput special pentru a veni in
@@ -173,29 +189,29 @@
                     si umiditate.
                 </div>
                 <div id="menu1" class="tab-pane fade">
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
                 <div id="menu2" class="tab-pane fade">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,totam rem aperiam.</p>
                 </div>
                 <div id="menu3" class="tab-pane fade">
-                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.</p>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                 </div>
             </div>
         </div>
+    </div>
+    <!--  -->
+    <div class="container">
         <div class="section-four container position-relative">
             <div class="header d-flex justify-content-between align-items-center">
                 <h2 class="title header-homepage ml-0">Jucării Recomandate</h2>
             </div>
             <div class="filters d-flex justify-content-between align-items-center">
                 <!-- acest span e folosit pentru a pastra stilurile anteriroare copy-paste -->
-               <span>&nbsp;</span>
+                <span>&nbsp;</span>
                 <!-- sagetile pentru slider -->
                 <div class="navigation-buttons d-flex align-items-center">
-                 <span>&nbsp;</span>
+                    <span>&nbsp;</span>
                     <div class="arrows">
                         <img src="../assets/svg/arrow left.svg" alt="arrow-left">
                         <img src="../assets/svg/arrow right.svg" alt="arrow-right">
@@ -313,6 +329,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"></script>
+        <script src="./productPage.js"></script>
+    </div>
 </body>
-
 </html>
