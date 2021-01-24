@@ -898,6 +898,13 @@ body {
     margin-top: 14px;
 }
 
+.owl-nav {
+    position: absolute;
+    right: 10px;
+    top:-30px;
+}
+
+
 /* spinner 2 */
 
 .lds-roller {
@@ -999,6 +1006,14 @@ body {
     }
     .navbar .navbar-links .navbar-links-mobile{
         display: flex;
+    }
+}
+
+
+@media only screen and (max-width:1070px) {
+    .owl-nav {
+        position: absolute;
+        top:97%;
     }
 }
 

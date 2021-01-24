@@ -67,12 +67,12 @@
     display: flex;
 }
 .cards-container .product-card {
-    background-color: rgba(17, 112, 218, 0.06);
+    background-color: #fff;
     width: 260px;
     padding: 10px;
     border-radius: 12px;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(17, 112, 218, 0.06);
+    box-shadow: 0 2px 8px 0 rgba(17, 112, 218, 0.06);
     margin-right: 17px;
 }
 .cards-container .product-card .card-product-header img {
@@ -130,7 +130,6 @@
 .card-product-footer .likes .img-likes {
     height: 20px;
     width: 17px;
-    background-color: gold;
 }
 .card-product-footer .likes .number-likes {
     color: #42a91d;
@@ -159,7 +158,6 @@
 
 @media only screen and (max-width: 767px) {
     .cards-container .product-card {
-        width: 48%;
         margin-right: 0;
     }
     .cards-container .row {
