@@ -903,6 +903,9 @@ body {
     right: 10px;
     top:-30px;
 }
+.owl-nav button{
+    outline: none;
+}
 
 
 /* spinner 2 */

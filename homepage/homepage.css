@@ -594,3 +594,13 @@
         width: 95%;
     }
 }
+
+@media only screen and (max-width:375px) {
+    .filters-container .filter .age-interval {
+        position: relative;
+        right: -6px;
+    }
+    .filters-container .filter {
+        width: 86px;
+    }
+}
