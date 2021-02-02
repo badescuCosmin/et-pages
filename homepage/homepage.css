@@ -542,6 +542,9 @@
     .section-four .header :first-child{
         margin-bottom: 15px!important;
     }
+    .main-content {
+        margin-bottom: 0;
+    }
 }
 
 
