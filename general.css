@@ -442,7 +442,7 @@ body {
     color:var(--light-grey);
     font-weight: var(--font-small-medium);
     font-size: var(--font14);
-    padding: 5px 0px;
+    padding: 5px 0 0 8px;
 }
 .item-box-container .checkbox-wrapper {
     width: 30px;
