@@ -28,6 +28,12 @@
     --font24: 24px;
     --font28: 28px;
     --font36: 36px;
+
+    --productPageDesktopContainer: 680px;
+    --productPageDesktopImageContainer: 620px;
+
+    --productPageMobileContainer: 532px;
+    --productPageMobileImageContainer: 452px;
 }
 /* general */
 body {
@@ -1024,6 +1030,10 @@ body {
     .btn-primary {
         width: 370px;
     }
+    /* :root {
+        --productPageDesktopContainer: 480px;
+        --productPageDesktopImageContainer:420px;
+    } */
     .btn-wrapper {
         position: fixed;
         bottom: 0;
@@ -1039,7 +1049,7 @@ body {
     }
     .is-visible {
     margin-left: 0 !important;
-}
+    }
 .wrapper {
     position: absolute;
     top:70px;
