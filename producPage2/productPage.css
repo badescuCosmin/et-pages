@@ -300,6 +300,10 @@
     padding:0 15px;
 }
 
+.section-four {
+    margin:70px 0;
+}
+
 @media only screen and (max-width: 991px) {
     .product-page-container .product-container .product-info {
         width: 570px;
@@ -418,7 +422,7 @@
 
     .product-page-container .product-container .product-info .product-cta {
         position: absolute;
-        bottom: 0px;
+        bottom: -30px;
         left: 50%;
         transform: translate(-50%);
     }
@@ -445,6 +449,9 @@
 
     }
 
+    .category-featured-products .owl-nav, .category-carousel .owl-nav {
+        margin-top: -90px !important;
+    }
 
     .product-page-container .carousel-holder {
         display: flex;
@@ -452,6 +459,10 @@
         position: relative;
         width: 100%;
         padding: 0;
+    }
+
+    .section-four {
+        margin:40px 0;
     }
 
     .product-page-container .carousel-holder .carousel-item img {
@@ -481,7 +492,6 @@
         background: #1170DA;
     }
    
-
     .product-page-container .carousel-item img {
         width: 65%;
         /* variabile poza desktop */
