@@ -1075,7 +1075,7 @@ body {
       --font36:28px;
       --font20:16px;
       --productPageDesktopContainer: 420px;
-      --productPageDesktopImageContainer: 420px;
+      --productPageDesktopImageContainer: 380px;
     }
     .item-box-container {
         padding: 10px 7px 10px 7px;
@@ -1108,7 +1108,7 @@ body {
     }
     :root {
         --productPageDesktopContainer: 300px;
-        --productPageDesktopImageContainer: 300px;
+        --productPageDesktopImageContainer: 260px;
     }
     
 }
