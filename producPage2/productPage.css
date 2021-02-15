@@ -515,5 +515,6 @@
         /* variabile poza desktop */
         max-height: var(--productPageDesktopImageContainer);
         margin: auto 0;
+        display: block;
     }
 }
