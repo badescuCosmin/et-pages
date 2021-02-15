@@ -1,6 +1,3 @@
-.content {
-    padding-bottom: 80px !important;
-}
 
 .product-page-container .route {
     padding-top: 136px;
@@ -91,8 +88,8 @@
 }
 
 .product-page-container .carousel-item img {
-    width: 75%;
-    /* variabile poza desktop */
+    display: block;
+    margin: auto;
     width: 75%;
     max-height: var(--productPageDesktopImageContainer);
 }
@@ -288,7 +285,13 @@
     right: 0;
 }
 
-.product-page-container .tab-content div {
+.product-page-container .tab-content  .tab-pane,
+.product-page-container .tab-content  .tab-pane .description {
+    height: 300px;
+}
+
+.product-page-container .tab-content .list-group {
+    overflow: auto;
     height: 300px;
 }
 
@@ -387,7 +390,22 @@
         overflow:hidden;
         height: 310px;
     }
-
+    
+    /*book custom code*/
+    .book-leftContainer {
+        height: 410px !important;
+    }
+	
+	.book-carousel{
+		height: 410px !important;
+		max-height: 410px !important;
+	}
+	
+	.book-carousel img{
+		height: 410px !important;
+		max-height: 410px !important;
+	}
+	
     .product-page-container .product-container .product-info {
         margin-top: 20px;
         padding-left: 0;
@@ -496,6 +514,6 @@
         width: 65%;
         /* variabile poza desktop */
         max-height: var(--productPageDesktopImageContainer);
-        margin: 0;
+        margin: auto 0;
     }
 }
