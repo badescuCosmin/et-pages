@@ -310,7 +310,7 @@ var FormValidator = (function() {
         if (input.isEmail) {
             if (value) {
                 var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
-                var isvalid = _isValueValid(value, pattern);
+                var isvalid = _isValueValid(value.trim(), pattern);
                 if (!isvalid) {
                     errorMessage = validationMesages.getEmailErrorMessage();
                 }

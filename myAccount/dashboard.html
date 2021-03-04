@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My account</title>
+<!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <link rel="stylesheet" href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/roboto-fontface@0.10.0/css/roboto/roboto-fontface.min.css">
+<!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+
+<link rel="stylesheet" href="../general.css">
+<link rel="stylesheet" href="../basePlan/basePlan.css">
+<link rel="stylesheet" href="./myAccount.css">
+
+<body class="content">
+    <nav class="navbar">
+        <div class="navbar-wrapper container">
+            <div class="d-flex align-items-center">
+                <div
+                    class="navbar-btn-mobile d-flex d-lg-none mr-3 mr-lg-0 justify-content-center align-items-center flex-column">
+                    <span></span>
+                    <span></span>
+                </div>
+                <img class="logo" src="../assets/svg/Logo.png" alt="logo">
+            </div>
+            <div class="navbar-links d-flex">
+                <ul class="navbar-links-center align-items-center d-none d-lg-flex">
+                    <li class="navbar-link"><a class="btn btn-link">Toys</a></li>
+                    <li class="navbar-link"><a class="btn btn-link">Mega Toys</a></li>
+                    <li class="navbar-link"><a class="btn btn-link"
+                            href="../orderFinalized/orderFinalized.html">Lego</a></li>
+                    <li class="navbar-link"><a class="btn btn-link"
+                            href="../subscriptionConfirmation/subscriptionConfirmation.html">Books</a></li>
+                </ul>
+                <ul class="navbar-links-left align-items-center d-none d-lg-flex">
+                    <li class="navbar-link active"><a class="btn btn-link" href="../planSteps/plansSteps.html">Plans</a>
+                    </li>
+                    <li class="navbar-link"><a class="btn btn-link" href='../popupAddName/popupAddName.html'>Sign In</a>
+                    </li>
+                    <button type="button" class="btn-navbar"><a class="btn btn-link"
+                            href="../deliveryAddress/deliveryAddress.html">Create account</a></button>
+                </ul>
+                <ul class="navbar-links-mobile d-flex d-lg-none">
+                    <span><img src="../assets/svg/User.svg" alt="user"></span>
+                    <span><img src="../assets/svg/Cart.svg" alt="cart"></span>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ui class="container myAccount-navigation">
+        <li class="active">Dashboard</li>
+        <li>Playlist</li>
+        <li>Orders</li>
+        <li>Invoices</li>
+        <li>Payment cards</li>
+        <li>Addresses</li>
+        <li>Reviews</li>
+        <li>Extra benefits</li>
+        <li>Profile</li>
+    </ui>
+    <div class="container d-flex align-items-start">
+        <div class="left-container">
+            <h3 class="main-title">Buna seara, <span>Andrei</span></h3>
+            <div class="myAccount-resume">
+                <div>
+                    <h2>Subscription Freeze</h2>
+                    <p>To continue using ever.toys please resume your subscription </p>
+                </div>
+                <button class="btn-primary">
+                    Resume
+                </button>
+            </div>
+            <div class="myAccount-container">
+                <h3 class="title">Your subscription</h3>
+                <div class="list-item">
+                    <span class="label">
+                        Next invoice Data:
+                    </span>
+                    <span>12/12/2020</span>
+                </div>
+                <div class="list-item">
+                    <span class="label">
+                        Next free order:
+                    </span>
+                    <span>12/12/2020</span>
+                </div>
+                <div class="list-item">
+                    <span class="label">
+                        Frequency:
+                    </span>
+                    <span>Monthly</span>
+                    &nbsp;
+                    <span class="change-action">Change</span>
+                </div>
+                <h4 class="total-status">You ordered toys that have a retail value of <span>440</span> lei and saved
+                    <span>331</span> lei.
+                </h4>
+                <div class="subscription-container mx-auto">
+                    <div class="subscription-details">
+                        <div class="d-flex justify-content-between">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex">
+                                    <div class="icon-wrapper freeze-color">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <div class="text">2 jucarii</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex">
+                                    <div class="icon-wrapper freeze-color">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <div class="text">1 carte</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex">
+                                    <div class="icon-wrapper freeze-color">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <div class="text">1 transport/lună inclus</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex">
+                                    <div class="icon-wrapper freeze-color">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <div class="text">Fără costuri ascunse</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="subscription-card-price">
+                                <div class="subscription-card-wrapper freeze-color">
+                                    <div class="text-wrapper">
+                                        <div class="price">90.00</div>
+                                        <div class="text">Ron/lunar</div>
+                                    </div>
+                                </div>
+                                <span class="change-action">Change</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="discount-value">The above value reflects a <span class="discount">25% discount</span> that is
+                    valid until <span class="date">13/03/2021</span></p>
+            </div>
+            <div class="myAccount-container">
+                <h3 class="title">Your orders</h3>
+                <div class="list-item">
+                    <span class="label">
+                        Last order:
+                    </span>
+                    <span>#23</span>
+                    &nbsp;
+                    <span class="status">In Transit</span>
+                </div>
+                <div class="list-item">
+                    <span class="label">
+                        Delivery date:
+                    </span>
+                    <span>12/12/2020</span>
+                </div>
+                <div class="list-item">
+                    <span class="label">
+                        Adresa de livrare:
+                    </span>
+                    <span>Adresă de livrare: Piata Alba Iulia 5, etaj 2, Apartement 13</span>
+                </div>
+                <h4 class="previous-orders">See previous orders</h4>
+            </div>
+            <div class="myAccount-container">
+                <h3 class="title">Your invoices</h3>
+                <div class="list-item">
+                    <span class="label">
+                        Last invoice:
+                    </span>
+                    <span>1234</span>
+                    &nbsp;
+                    <span class="status">In Transit</span>
+                </div>
+                <div class="list-item">
+                    <span class="label">
+                        Due date:
+                    </span>
+                    <span>12/12/2020</span>
+                </div>
+                <div class="list-item">
+                    <span class="label">
+                        Status:
+                    </span>
+                    <span>Payment failed</span>
+                </div>
+                <div class="d-flex cta-container">
+                    <button class="btn-primary myAccount-container-btn freeze-color">Pay invoice</button>
+                    <h4 class="previous-orders">See previous orders</h4>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <h3 class="recommend-title">Recommend evertoys to your friends!</h3>
+            <p>You get <span>one month of free subscription</span> for each friend , your friend gets 
+                <span>two months at 50%.</span> Up to 5 friends.</p>
+            <div class="d-flex align-items-center footer-container">
+                <div>
+                    <span class="label">Code</span>
+                    <span class="value">Alexandru-B33L-ARF-VBT</span>
+                </div>
+                <button class="btn-primary recommend setMargin">Copy</button>
+                <button class="btn-primary recommend">Share</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
