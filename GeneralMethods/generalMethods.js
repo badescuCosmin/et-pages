@@ -7,7 +7,6 @@ var generalMethods = {};
         checkIcon = '<i class="fas fa-check fa-sm icon-style checkbox-icon-check"></i>',
         radioIcon = '<i class="fas fa-check fa-sm icon-style radiobox-icon exist" style = "color: #FFF !important"></i>',
         checkBackground = 'item-box-check-background',
-        solidBlueBorder = '2px solid #1170DA',
         transparentBorder = '2px solid transparent',
         blueColorClass = 'blue-color',
         displayNone = 'd-none',
@@ -20,6 +19,13 @@ var generalMethods = {};
     generalMethods.setCheckbox = function (noBorders) {
         $itemBoxContainer.on('click', function () {
             const $checkContainer = $(this).find('.checkbox-wrapper');
+            const $isMegaToy = $(this).find('.mega-toy');
+            let solidActiveBorder;
+            if($isMegaToy.length) {
+                solidActiveBorder = '2px solid rgba(95, 193, 61, 0.8)'
+            } else {
+                solidActiveBorder = '2px solid #1170DA'
+            }
             const $parentContainer = $checkContainer.parent();
             const $checkbox = $checkContainer.children().first('input');
             const icon = $checkContainer.find('i');
@@ -28,7 +34,7 @@ var generalMethods = {};
                 icon.remove();
                 $checkContainer.append(checkIcon);
                 $checkContainer.addClass(checkBackground);
-                if (!noBorders) $parentContainer.css('border', solidBlueBorder);
+                if (!noBorders) $parentContainer.css('border', solidActiveBorder);
                 $parentContainer.find("span").addClass(blueColorClass)
             } else {
                 icon.remove();

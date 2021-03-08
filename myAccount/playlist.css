@@ -1,0 +1,239 @@
+.playlist .header {
+  margin-top: 48px;
+  font-weight: var(--font-bold);
+  line-height: 24px;
+  font-size: var(--font24);
+}
+
+.playlist .description {
+  font-size: var(--font16);
+  line-height: 20px;
+  font-weight: var(--font-small-medium);
+  font-size: var(--font16);
+  color: var(--normal-textColor);
+  margin-top: 30px;
+  max-width: 75%;
+}
+
+.playlist-container .header {
+  margin: 24px 0;
+  color: #252d3c;
+  font-size: var(--font18);
+  font-weight: var(--font-medium);
+}
+
+.playlist .description span {
+  color: #fb7248;
+}
+
+.playlist .playlist-container {
+  background-color: rgba(0, 0, 0, 0.03);
+  margin-top: 32px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.playlist .playlist-container .content-indicators {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px 0 4px;
+  margin-bottom: 11px;
+  color: #17194c;
+  font-weight: var(--font-small-medium);
+  line-height: 24px;
+  font-size: var(--font16);
+}
+
+.playlist .playlist-container .orderHistory {
+  display: flex;
+  justify-content: space-between;
+}
+
+.playlist .playlist-container .orderHistory .id {
+  margin-left: 26px;
+  margin-right: 50px;
+}
+.playlist .playlist-container .orderHistory .order-date {
+  margin-right: 90px;
+}
+
+.playlist .playlist-container .orderHistory .rightSideIndicators {
+  margin-right: 181px;
+}
+
+.playlist .playlist-container .content-indicators .rate-indicator {
+  width: 100px;
+  text-align: center;
+}
+.playlist .playlist-container .content-indicators .retail-price-indicator {
+  margin-left: 27px;
+  width: 83px;
+  text-align: center;
+}
+.playlist .playlist-container .content-indicators .buy-indicator {
+  width: 189px;
+  text-align: center;
+  margin-left: 23px;
+}
+
+.playlist .playlist-item {
+  background-color: var(--white-color);
+  border-radius: 18px;
+  box-shadow: 0 2px 6px 0 rgba(22, 59, 157, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px 0 4px;
+  margin-bottom: 6px;
+  color: var(--normal-textColor);
+  font-weight: var(--font-medium);
+  line-height: 20px;
+  font-size: var(--font16);
+}
+.playlist .playlist-item.expandable-item {
+  display: block;
+}
+
+.playlist .playlist-item .item-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.playlist .playlist-item .child-list {
+  display: none;
+  margin-left: 80px;
+  margin-right: 155px;
+  padding-bottom: 11px;
+}
+
+.playlist .playlist-item .child-list .inner-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 9px;
+}
+
+.playlist .playlist-item .child-list .details-image {
+  width: 71px;
+  display: block;
+  height: 71px;
+  background-color: orangered;
+}
+
+.playlist .playlist-item .child-list .details-rating {
+  display: flex;
+  width: 98px;
+  justify-content: space-between;
+}
+
+.playlist .playlist-item .id {
+  margin-left: 26px;
+  margin-right: 50px;
+}
+
+.playlist .playlist-item .order-date {
+  margin-right: 90px;
+  font-weight: var(--font-bold);
+}
+
+.playlist .playlist-item .awb-code {
+  font-weight: var(--font-small-medium);
+}
+
+.playlist .playlist-item .state {
+  font-weight: var(--font-small-medium);
+  color: #38811f;
+}
+
+.playlist .playlist-item .details .btn-primary {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  width: 107px;
+  margin-left: 53px;
+}
+
+.playlist .rate {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playlist .like,
+.playlist .dislike {
+  width: 44px;
+  height: 44px;
+  display: block;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.playlist .playlist-item .retail-price {
+  width: 83px;
+  height: 80px;
+  margin-left: 27px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.playlist .playlist-item .buy {
+  width: 189px;
+  height: 80px;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playlist .playlist-item .buy .invert {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  width: 189px;
+  margin: 0;
+}
+
+.playlist .playlist-item .item-image {
+  width: 71px;
+  height: 71px;
+  background-color: orangered;
+  display: block;
+}
+
+.playlist .playlist-item .item-title {
+  margin-left: 33px;
+  color: var(--normal-textColor);
+  line-height: 20px;
+  font-weight: var(--font-medium);
+  font-size: var(--font16);
+}
+
+.playlist .playlist-item .btn-primary {
+  width: 156px;
+  font-size: var(--font16);
+  font-weight: var(--font-small-medium);
+  margin: 0 20px 0 63px;
+}
+
+.playlist .playlist-item .delivery-time {
+  font-size: var(--font16);
+  font-weight: var(--font-small-medium);
+  line-height: 24px;
+  color: #5fc13d;
+}
+
+.playlist .playlist-item .delivery-time.not-available {
+  color: var(--error-color);
+}
+
+.playlist .playlist-item .item-close-img {
+  width: 16px;
+  height: 16px;
+  background-color: orangered;
+  cursor: pointer;
+}

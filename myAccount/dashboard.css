@@ -1,0 +1,367 @@
+.content {
+  margin-bottom: 100px;
+}
+
+.myAccount-navigation {
+  display: flex;
+  margin-top: 116px;
+  height: 50px;
+  background-color: #504e7f;
+  border-radius: 25px;
+  list-style: none;
+  align-items: center;
+}
+
+.myAccount-navigation li,
+.myAccount-navigation li a {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: var(--font-small-medium);
+  text-decoration: none;
+  font-size: var(--font16);
+}
+
+.myAccount-navigation li a {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: var(--font-small-medium);
+  font-size: var(--font16);
+}
+
+.myAccount-navigation li.active {
+  background-color: #fff;
+  border-radius: 25px;
+  color: #41436b;
+}
+
+.content .main-title {
+  font-size: var(--font24);
+  color: #f52865;
+}
+
+.content .main-title span {
+  display: block;
+  color: #1e2843;
+  margin-top: 12px;
+  font-weight: var(--font-bold);
+}
+
+.content .left-container {
+  width: 60%;
+  margin-top: 47px;
+}
+
+.content .left-container .myAccount-resume {
+  border: 2px solid #f8825d;
+  border-radius: 20px;
+  padding: 22px 32px 18px 22px;
+  margin-top: 32px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .left-container .my-account-pay-error {
+  display: flex;
+  border: 2px solid #e24c4b;
+  padding: 22px 26px;
+  border-radius: 20px;
+  margin-top: 32px;
+  justify-content: space-between;
+}
+
+.content .left-container .my-account-pay-error .warning-message {
+  color: #d91020;
+  font-weight: var(--font-medium);
+  font-size: var(--font16);
+  line-height: 20px;
+}
+
+.content .left-container .my-account-pay-error .image-warning {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  display: block;
+  margin-right: 10px;
+}
+
+.content .left-container .my-account-pay-error .options {
+  display: flex;
+  align-items: center;
+}
+
+.content .left-container .my-account-pay-error .options .option {
+  color: var(--primary-color);
+  font-weight: var(--font-medium);
+  font-size: var(--font16);
+  cursor: pointer;
+}
+
+.content .left-container .my-account-pay-error .options .separator {
+  width: 1px;
+  height: 20px;
+  display: block;
+  background-color: #1e2843;
+  margin: 0 16px;
+  opacity: 0.2;
+}
+
+.content .left-container .myAccount-resume h2 {
+  font-size: var(--font16);
+  font-weight: var(--font-bold);
+}
+
+.content .left-container .myAccount-resume p {
+  font-size: var(--font16);
+  font-weight: var(--font-small-medium);
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.content .left-container .myAccount-resume button {
+  width: 127px;
+  margin: 0;
+  height: 44px;
+  font-size: var(--font16);
+}
+
+.content .myAccount-container {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  padding: 32px 26px 25px 26px;
+  margin-top: 24px;
+  color: #17194c;
+}
+
+.content .myAccount-container .title {
+  font-size: var(--font20);
+  font-weight: var(--font-bold);
+  margin-bottom: 26px;
+}
+
+.content .myAccount-container .list-item {
+  margin-top: 16px;
+}
+
+.content .myAccount-container .list-item span:nth-child(1) {
+  font-size: var(--font16);
+  font-weight: var(--font-bold);
+  color: #f8825d;
+  width: 170px;
+  display: inline-block;
+}
+
+.content .myAccount-container .list-item span:not(:first-child) {
+  color: #41436b;
+  font-weight: var(--font-medium);
+}
+
+.content .myAccount-container .list-item .change-action {
+  cursor: pointer;
+}
+.content .myAccount-container .list-item .change-action.freeze-color {
+  color: var(--freeze-color);
+}
+
+.content .myAccount-container .list-item .change-action.success-color {
+  color: var(--primary-color);
+}
+
+.content .myAccount-container .list-item .status {
+  color: #45922a !important;
+}
+
+.content .myAccount-container .total-status {
+  font-size: var(--font14);
+  font-weight: var(--font-small-medium);
+  margin-top: 16px;
+}
+
+.content .myAccount-container .previous-orders {
+  color: #1170da;
+  font-weight: var(--font-medium);
+  margin-top: 16px;
+  font-size: var(--font16);
+}
+
+.content .left-container .subscription-container {
+  margin-top: 32px;
+  width: 464px;
+}
+
+.content .left-container .subscription-container .list-group .extras {
+  font-weight: var(--font-medium);
+  font-size: var(--font16);
+  line-height: 16px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.subscription-card-price .actions-container {
+  display: flex;
+  margin-top: 17px;
+}
+
+.subscription-card-price .change-options {
+  height: 102px;
+  background-color: var(--white-color);
+  box-shadow: 0 2px 12px 0 rgba(17, 112, 218, 0.16);
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  width: 100%;
+  border-top: 2px solid var(--primary-color);
+  margin-top: 11px;
+  display: none;
+}
+
+.subscription-card-price .change-options ul {
+  list-style: none;
+  margin-top: 11px;
+}
+
+.subscription-card-price .change-options ul li {
+  font-weight: var(--font-medium);
+  line-height: 40px;
+  font-size: var(--font14);
+  color: #41436b;
+  cursor: pointer;
+}
+
+.subscription-card-price .actions-container .btn-primary {
+  width: 100px;
+  height: 44px;
+  font-size: var(--font16);
+}
+.subscription-card-price .actions-container .btn-primary.invert {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+}
+
+.subscription-card-price .actions-container .change-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: orangered;
+  border-radius: 50%;
+}
+
+.myAccount-container .cta-container {
+  margin-top: 23px;
+}
+
+.myAccount-container .myAccount-container-btn {
+  margin: 0;
+  width: 147px;
+  font-size: var(--font16);
+  margin-right: 26px;
+}
+
+.myAccount-container .myAccount-container-btn:hover,
+.myAccount-container .myAccount-container-btn:disabled {
+  color: #fff;
+  border: none;
+  background-color: var(--freeze-color);
+}
+
+.subscription-card-wrapper.freeze-color {
+  background: var(--freeze-color);
+}
+
+.myAccount-container .myAccount-container-btn.freeze-color {
+  background-color: #898f95;
+}
+
+.subscription-container .list-group-item .icon-wrapper.freeze-color {
+  color: var(--freeze-color);
+}
+
+.subscription-container .subscription-details .options {
+  margin-top: 14px;
+}
+
+.subscription-container .subscription-details .options .header-secondary {
+  margin-bottom: 40px;
+}
+
+.subscription-container .subscription-details .options .btn-wrapper {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.subscription-container .subscription-details .options .cancel-action {
+  display: block;
+  color: var(--primary-color);
+  font-weight: var(--font-medium);
+  font-size: var(--font16);
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.content .right-container {
+  background: linear-gradient(
+    to right bottom,
+    rgba(254, 205, 195, 0.62),
+    rgba(254, 212, 203, 0.37)
+  );
+  width: 470px;
+  margin-left: 30px;
+  margin-top: 150px;
+  border-radius: 20px;
+  padding: 32px 26px;
+}
+
+.content .right-container .recommend-title {
+  font-size: var(--font20);
+  font-weight: var(--font-bold);
+  color: #17194c;
+}
+
+.content .right-container p {
+  font-size: var(--font16);
+  font-weight: var(--font-small-medium);
+  color: #41436b;
+  margin-top: 26px;
+}
+
+.content .right-container p span {
+  font-weight: var(--font-bold);
+}
+
+.content .right-container .footer-container {
+  margin-top: 31px;
+  font-size: var(--font16);
+}
+.content .right-container .footer-container .label {
+  font-weight: var(--font-bold);
+}
+
+.content .right-container .btn-primary.recommend {
+  background-color: #fff;
+  color: #1170da;
+  border-radius: 10px;
+  height: 36px;
+  width: 70px;
+  font-size: var(--font14);
+  margin: 0;
+}
+
+.content .right-container .btn-primary.recommend.setMargin {
+  margin: 0 10px 0 20px;
+}
